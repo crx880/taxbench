@@ -367,14 +367,6 @@
     var nonEligibleDivEl = document.getElementById("corp-noneligible-dividends");
     var provSelect = document.getElementById("corp-province");
     var resultsEl = document.getElementById("corp-results");
-    var compareToggle = document.getElementById("corp-compare");
-    var compareYear = document.getElementById("corp-compare-year");
-    var compareYearWrap = document.getElementById("corp-compare-year-wrap");
-
-    compareToggle.addEventListener("change", function() {
-      compareYearWrap.style.display = compareToggle.checked ? "block" : "none";
-      run();
-    });
 
     function getInputs() {
       return {
@@ -393,21 +385,8 @@
       if (!hasIncome) { resultsEl.style.display = "none"; return; }
 
       var result = calculate(inputs, CORP);
-
-      if (compareToggle && compareToggle.checked && compareYear) {
-        loadRates(function(allRates) {
-          if (allRates && allRates[compareYear.value]) {
-            var result2 = calculate(inputs, allRates[compareYear.value]);
-            resultsEl.innerHTML = renderCompare(result, result2);
-          } else {
-            resultsEl.innerHTML = render(result) + '<p class="estimator__note">No corporate rate data available for ' + compareYear.value + '.</p>';
-          }
-          resultsEl.style.display = "block";
-        });
-      } else {
-        resultsEl.innerHTML = render(result);
-        resultsEl.style.display = "block";
-      }
+      resultsEl.innerHTML = render(result);
+      resultsEl.style.display = "block";
     }
 
     var allInputs = [activeEl, passiveEl, capGainsEl, eligibleDivEl, nonEligibleDivEl];
@@ -415,7 +394,6 @@
       if (allInputs[i]) allInputs[i].addEventListener("input", run);
     }
     if (provSelect) provSelect.addEventListener("change", run);
-    if (compareYear) compareYear.addEventListener("change", run);
 
     run();
   }
