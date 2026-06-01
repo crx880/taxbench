@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-CA" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Corporate Tax Estimator &mdash; TaxBench.ca</title>
+  <meta name="description" content="Estimate Canadian corporate income tax for CCPCs. Part I tax, Part IV tax, RDTOH, dividend refund, and capital dividend account.">
+  <meta property="og:title" content="Corporate Tax Estimator">
+  <meta property="og:description" content="Estimate Canadian corporate income tax for CCPCs. Part I tax, Part IV tax, RDTOH, dividend refund, and capital dividend account.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="container">
+    <a href="index.html" class="site-nav__brand"><img src="../assets/images/logo.png" alt="TaxBench.ca" height="64" style="height:64px;width:auto"></a>
+    <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+    <ul class="site-nav__links">
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="tax-tips.html">Tax&nbsp;Tips</a></li>
+      <li class="nav-dropdown">
+        <a href="personal-tax-rates.html" class="nav-dropdown__toggle">Rates</a>
+        <ul class="nav-dropdown__menu">
+          <li><a href="personal-tax-rates.html">Personal</a></li>
+          <li><a href="corporate-tax-rates.html">Corporate</a></li>
+        </ul>
+      </li>
+      <li class="nav-dropdown">
+        <a href="estimator.html" class="nav-dropdown__toggle">Estimator</a>
+        <ul class="nav-dropdown__menu">
+          <li><a href="estimator.html">Personal</a></li>
+          <li><a href="corporate-estimator.html">Corporate</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><button class="theme-toggle" aria-label="Toggle dark mode">Dark</button></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+<header class="page-header container container-narrow">
+  <p class="page-header__kicker">2026 Tax Year</p>
+  <h1 class="page-header__title">Corporate Income Tax Estimator</h1>
+  <p class="page-header__subtitle">Estimate corporate tax for a Canadian-controlled private corporation (CCPC). Calculates Part I tax, Part IV tax, refundable dividend tax on hand (RDTOH), dividend refund, and capital dividend account (CDA).</p>
+</header>
+
+<section class="container" style="padding-top:0">
+  <div class="estimator" id="corp-estimator" style="max-width:var(--max-width-wide);margin-left:auto;margin-right:auto">
+    <h2 class="estimator__heading">Corporation Income</h2>
+
+    <form id="corp-estimator-form" class="estimator__form" autocomplete="off">
+      <fieldset class="estimator__group">
+        <legend class="estimator__group-title">Active Business Income</legend>
+        <div class="estimator__row">
+          <div class="estimator__field">
+            <label class="estimator__label" for="corp-active-income">Active business income ($)</label>
+            <input type="number" id="corp-active-income" class="estimator__input estimator__input--income" placeholder="0" min="0" step="1000">
+          </div>
+          <div class="estimator__field">
+            <label class="estimator__label" for="corp-province">Province / Territory</label>
+            <select id="corp-province" class="estimator__select">
+              <option value="AB">Alberta</option>
+              <option value="BC">British Columbia</option>
+              <option value="MB">Manitoba</option>
+              <option value="NB">New Brunswick</option>
+              <option value="NL">Newfoundland and Labrador</option>
+              <option value="NS">Nova Scotia</option>
+              <option value="ON" selected>Ontario</option>
+              <option value="PE">Prince Edward Island</option>
+              <option value="QC">Quebec</option>
+              <option value="SK">Saskatchewan</option>
+              <option value="NT">Northwest Territories</option>
+              <option value="NU">Nunavut</option>
+              <option value="YT">Yukon</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="estimator__group">
+        <legend class="estimator__group-title">Investment Income</legend>
+        <div class="estimator__row">
+          <div class="estimator__field">
+            <label class="estimator__label" for="corp-passive-income">Passive investment income ($)</label>
+            <span class="estimator__hint">Interest, rental, foreign dividends, royalties</span>
+            <input type="number" id="corp-passive-income" class="estimator__input estimator__input--income" placeholder="0" min="0" step="1000">
+          </div>
+          <div class="estimator__field">
+            <label class="estimator__label" for="corp-capital-gains">Taxable capital gains ($)</label>
+            <span class="estimator__hint">50% taxable. Non-taxable 50% goes to CDA</span>
+            <input type="number" id="corp-capital-gains" class="estimator__input estimator__input--income" placeholder="0" min="0" step="1000">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="estimator__group">
+        <legend class="estimator__group-title">Dividends Received</legend>
+        <div class="estimator__row">
+          <div class="estimator__field">
+            <label class="estimator__label" for="corp-eligible-dividends">Eligible dividends received ($)</label>
+            <span class="estimator__hint">Part IV tax: 38.33% refundable as ERDTOH</span>
+            <input type="number" id="corp-eligible-dividends" class="estimator__input estimator__input--income" placeholder="0" min="0" step="1000">
+          </div>
+          <div class="estimator__field">
+            <label class="estimator__label" for="corp-noneligible-dividends">Non-eligible dividends received ($)</label>
+            <span class="estimator__hint">Part IV tax: 0% (connected corporation exception)</span>
+            <input type="number" id="corp-noneligible-dividends" class="estimator__input estimator__input--income" placeholder="0" min="0" step="1000">
+          </div>
+        </div>
+      </fieldset>
+
+    </form>
+    <div id="corp-results" class="estimator__results"></div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div><div class="site-footer__brand">TaxBench.ca</div><p class="site-footer__desc">Editorial tax resources for Canadians. Not affiliated with the Canada Revenue Agency.</p></div>
+      <div><h4>Resources</h4><ul><li><a href="articles.html">Articles</a></li><li><a href="tax-tips.html">Tax Tips</a></li><li><a href="personal-tax-rates.html">Personal Rates</a></li><li><a href="corporate-tax-rates.html">Corporate Rates</a></li><li><a href="estimator.html">Tax Estimator</a></li></ul></div>
+      <div><h4>Site</h4><ul><li><a href="about.html">About</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
+    </div>
+    <div class="site-footer__bottom"><span>&copy; 2026 TaxBench.ca.</span><span>For educational purposes only. Not tax advice.</span></div>
+  </div>
+</footer>
+
+<script defer src="assets/js/corporate-estimator.js"></script>
+</body>
+</html>

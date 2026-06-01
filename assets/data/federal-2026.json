@@ -1,0 +1,57 @@
+{
+  "year": 2026,
+  "description": "Federal tax brackets and credits for 2026. Source: CRA.",
+  "brackets": [
+    {
+      "min": 0,
+      "max": 58523,
+      "rate": 0.14
+    },
+    {
+      "min": 58524,
+      "max": 117045,
+      "rate": 0.205
+    },
+    {
+      "min": 117046,
+      "max": 181440,
+      "rate": 0.26
+    },
+    {
+      "min": 181441,
+      "max": 258482,
+      "rate": 0.29
+    },
+    {
+      "min": 258483,
+      "max": null,
+      "rate": 0.33
+    }
+  ],
+  "basicPersonalAmount": 16452,
+  "bpaReductionThreshold": 181440,
+  "bpaMinimum": 14829,
+  "notes": "Lowest federal rate permanently reduced to 14% for 2026",
+  "cpp": {
+    "rate": 0.0595,
+    "maxContribution": 3867.5,
+    "maxPensionableEarnings": 68500,
+    "basicExemption": 3500,
+    "selfEmployedRate": 0.119
+  },
+  "ei": {
+    "rate": 0.0163,
+    "maxContribution": 1116.55,
+    "maxInsurableEarnings": 68500
+  },
+  "dividendTaxCredit": {
+    "eligibleDividends": {
+      "grossUpRate": 0.38,
+      "federalCreditRate": 0.150198
+    },
+    "nonEligibleDividends": {
+      "grossUpRate": 0.15,
+      "federalCreditRate": 0.090301
+    }
+  }
+}

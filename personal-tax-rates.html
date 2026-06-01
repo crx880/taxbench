@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-CA" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personal Tax Rates 2026 &mdash; TaxBench.ca</title>
+  <meta name="description" content="2026 federal and provincial personal income tax rates for all Canadian provinces and territories.">
+  <meta property="og:title" content="2026 Personal Tax Rates in Canada">
+  <meta property="og:description" content="Federal and provincial personal income tax rates for all Canadian provinces and territories.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+  <style>
+    .rates-tabs{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:1.5rem}
+    .rates-tab{padding:6px 10px;font-size:.75rem;font-weight:600;font-family:var(--font-mono);border:1px solid var(--color-border);border-radius:var(--radius-sm);background:var(--color-bg-card);color:var(--color-text-secondary);cursor:pointer}
+    .rates-tab:hover{border-color:var(--color-accent);color:var(--color-accent)}
+    .rates-tab--active{background:var(--color-accent);color:#fff;border-color:var(--color-accent)}
+    .province-panel{display:none}
+    .province-panel--active{display:block}
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="index.html" class="site-nav__brand"><img src="../assets/images/logo.png" alt="TaxBench.ca" height="64" style="height:64px;width:auto"></a>
+    <button class="mobile-nav-toggle" aria-label="Toggle navigation"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    <ul class="site-nav__links">
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="tax-tips.html">Tax&nbsp;Tips</a></li>
+      <li class="nav-dropdown">
+        <a href="personal-tax-rates.html" class="nav-dropdown__toggle">Rates</a>
+        <ul class="nav-dropdown__menu">
+          <li><a href="personal-tax-rates.html">Personal</a></li>
+          <li><a href="corporate-tax-rates.html">Corporate</a></li>
+        </ul>
+      </li>
+      <li class="nav-dropdown">
+        <a href="estimator.html" class="nav-dropdown__toggle">Estimator</a>
+        <ul class="nav-dropdown__menu">
+          <li><a href="estimator.html">Personal</a></li>
+          <li><a href="corporate-estimator.html">Corporate</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><button class="theme-toggle">Dark</button></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+<header class="page-header container container-narrow">
+  <p class="page-header__kicker">2026 Tax Year</p>
+  <div style="display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:1rem">
+    <h1 class="page-header__title" style="margin-bottom:0">Personal Income Tax Rates</h1>
+    <div style="display:flex;align-items:center;gap:8px">
+      <label for="year-select" class="text-sm text-secondary">Year:</label>
+      <select id="year-select" class="estimator__select" style="max-width:120px;width:auto" onchange="if(this.value)window.location=this.value">
+        <option value="">2026</option>
+        <option value="tax-rates-2025.html">2025</option><option value="tax-rates-2024.html">2024</option><option value="tax-rates-2023.html">2023</option>
+        <option value="tax-rates-2022.html">2022</option><option value="tax-rates-2021.html">2021</option><option value="tax-rates-2020.html">2020</option>
+        <option value="tax-rates-2019.html">2019</option><option value="tax-rates-2018.html">2018</option><option value="tax-rates-2017.html">2017</option>
+        <option value="tax-rates-2016.html">2016</option><option value="tax-rates-2015.html">2015</option>
+      </select>
+    </div>
+  </div>
+  <p class="page-header__subtitle">Federal and provincial tax brackets and marginal rates for the 2026 tax year.</p>
+</header>
+
+<section class="container" style="padding-top:0">
+  <h2>Federal Tax Brackets</h2>
+  <table class="tax-table">
+    <thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead>
+    <tbody>
+      <tr><td>$0 &ndash; $58,523</td><td class="rate-cell">14.00%</td></tr>
+      <tr><td>$58,524 &ndash; $117,045</td><td class="rate-cell">20.50%</td></tr>
+      <tr><td>$117,046 &ndash; $181,440</td><td class="rate-cell">26.00%</td></tr>
+      <tr><td>$181,441 &ndash; $258,482</td><td class="rate-cell">29.00%</td></tr>
+      <tr><td>$258,483 and over</td><td class="rate-cell">33.00%</td></tr>
+    </tbody>
+  </table>
+  <p class="text-muted text-sm">Federal basic personal amount: $16,452 (reduced for net income above $181,440). First bracket rate (14%) is the BPA credit rate.</p>
+  <hr>
+  <h2>Provincial Tax Brackets</h2>
+  <p class="text-secondary">Select a province to view its 2026 brackets.</p>
+  <div class="rates-tabs" id="province-tabs">
+    <button class="rates-tab rates-tab--active" data-province="ON">ON</button>
+    <button class="rates-tab" data-province="BC">BC</button><button class="rates-tab" data-province="AB">AB</button>
+    <button class="rates-tab" data-province="QC">QC</button><button class="rates-tab" data-province="MB">MB</button>
+    <button class="rates-tab" data-province="SK">SK</button><button class="rates-tab" data-province="NS">NS</button>
+    <button class="rates-tab" data-province="NB">NB</button><button class="rates-tab" data-province="NL">NL</button>
+    <button class="rates-tab" data-province="PE">PE</button><button class="rates-tab" data-province="NT">NT</button>
+    <button class="rates-tab" data-province="NU">NU</button><button class="rates-tab" data-province="YT">YT</button>
+  </div>
+  <div class="province-panel province-panel--active" id="panel-ON"><h3>Ontario</h3>
+    <table class="tax-table"><thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead><tbody>
+      <tr><td>$0 &ndash; $53,891</td><td class="rate-cell">5.05%</td></tr>
+      <tr><td>$53,892 &ndash; $107,783</td><td class="rate-cell">9.15%</td></tr>
+      <tr><td>$107,784 &ndash; $150,000</td><td class="rate-cell">11.16%</td></tr>
+      <tr><td>$150,001 &ndash; $220,000</td><td class="rate-cell">12.16%</td></tr>
+      <tr><td>$220,001 and over</td><td class="rate-cell">13.16%</td></tr>
+    </tbody></table>
+    <p class="text-muted text-sm">BPA: $12,399. Surtax: 20% on tax over $5,703; 36% on tax over $7,285. Health premium: $0&ndash;$900.</p>
+  </div>
+  <div class="province-panel" id="panel-BC"><h3>British Columbia</h3><table class="tax-table"><thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead><tbody><tr><td>$0 &ndash; $49,231</td><td class="rate-cell">5.06%</td></tr><tr><td>$49,232 &ndash; $98,464</td><td class="rate-cell">7.70%</td></tr><tr><td>$98,465 &ndash; $113,048</td><td class="rate-cell">10.50%</td></tr><tr><td>$113,049 &ndash; $137,273</td><td class="rate-cell">12.29%</td></tr><tr><td>$137,274 &ndash; $186,125</td><td class="rate-cell">14.70%</td></tr><tr><td>$186,126 &ndash; $259,576</td><td class="rate-cell">16.80%</td></tr><tr><td>$259,577 and over</td><td class="rate-cell">20.50%</td></tr></tbody></table><p class="text-muted text-sm">BPA: $12,925.</p></div>
+  <div class="province-panel" id="panel-AB"><h3>Alberta</h3><table class="tax-table"><thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead><tbody><tr><td>$0 &ndash; $155,317</td><td class="rate-cell">8.00%</td></tr><tr><td>$155,318 &ndash; $186,381</td><td class="rate-cell">10.00%</td></tr><tr><td>$186,382 &ndash; $248,507</td><td class="rate-cell">12.00%</td></tr><tr><td>$248,508 &ndash; $372,761</td><td class="rate-cell">13.00%</td></tr><tr><td>$372,762 &ndash; $500,000</td><td class="rate-cell">14.00%</td></tr><tr><td>$500,001 and over</td><td class="rate-cell">15.00%</td></tr></tbody></table><p class="text-muted text-sm">BPA: $22,323.</p></div>
+  <div class="province-panel" id="panel-QC"><h3>Quebec</h3><p class="text-sm text-secondary">Quebec administers its own tax system. Federal Quebec Abatement: 16.5%.</p><table class="tax-table"><thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead><tbody><tr><td>$0 &ndash; $53,178</td><td class="rate-cell">14.00%</td></tr><tr><td>$53,179 &ndash; $106,341</td><td class="rate-cell">19.00%</td></tr><tr><td>$106,342 &ndash; $129,402</td><td class="rate-cell">24.00%</td></tr><tr><td>$129,403 and over</td><td class="rate-cell">25.75%</td></tr></tbody></table><p class="text-muted text-sm">BPA: $18,056.</p></div>
+  <div class="province-panel" id="panel-MB"><h3>Manitoba</h3><table class="tax-table"><thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead><tbody><tr><td>$0 &ndash; $37,837</td><td class="rate-cell">10.80%</td></tr><tr><td>$37,838 &ndash; $81,775</td><td class="rate-cell">12.75%</td></tr><tr><td>$81,776 and over</td><td class="rate-cell">17.40%</td></tr></tbody></table><p class="text-muted text-sm">BPA: $15,780.</p></div>
+  <div class="province-panel" id="panel-SK"><h3>Saskatchewan</h3><table class="tax-table"><thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead><tbody><tr><td>$0 &ndash; $50,617</td><td class="rate-cell">10.50%</td></tr><tr><td>$50,618 &ndash; $144,931</td><td class="rate-cell">12.50%</td></tr><tr><td>$144,932 and over</td><td class="rate-cell">14.50%</td></tr></tbody></table><p class="text-muted text-sm">BPA: $18,667.</p></div>
+  <div class="province-panel" id="panel-NS"><h3>Nova Scotia</h3><table class="tax-table"><thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead><tbody><tr><td>$0 &ndash; $30,389</td><td class="rate-cell">8.79%</td></tr><tr><td>$30,390 &ndash; $60,778</td><td class="rate-cell">14.95%</td></tr><tr><td>$60,779 &ndash; $95,511</td><td class="rate-cell">16.67%</td></tr><tr><td>$95,512 &ndash; $154,050</td><td class="rate-cell">17.50%</td></tr><tr><td>$154,051 and over</td><td class="rate-cell">21.00%</td></tr></tbody></table><p class="text-muted text-sm">BPA: $11,481.</p></div>
+  <div class="province-panel" id="panel-NB"><h3>New Brunswick</h3><table class="tax-table"><thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead><tbody><tr><td>$0 &ndash; $51,159</td><td class="rate-cell">9.40%</td></tr><tr><td>$51,160 &ndash; $102,322</td><td class="rate-cell">14.00%</td></tr><tr><td>$102,323 &ndash; $190,061</td><td class="rate-cell">16.00%</td></tr><tr><td>$190,062 and over</td><td class="rate-cell">19.50%</td></tr></tbody></table><p class="text-muted text-sm">BPA: $13,488.</p></div>
+  <div class="province-panel" id="panel-NL"><h3>Newfoundland and Labrador</h3><table class="tax-table"><thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead><tbody><tr><td>$0 &ndash; $44,496</td><td class="rate-cell">8.70%</td></tr><tr><td>$44,497 &ndash; $88,995</td><td class="rate-cell">14.50%</td></tr><tr><td>$88,996 &ndash; $159,098</td><td class="rate-cell">15.80%</td></tr><tr><td>$159,099 &ndash; $221,773</td><td class="rate-cell">17.30%</td></tr><tr><td>$221,774 &ndash; $283,442</td><td class="rate-cell">18.30%</td></tr><tr><td>$283,443 &ndash; $566,895</td><td class="rate-cell">20.80%</td></tr><tr><td>$566,896 &ndash; $1,133,785</td><td class="rate-cell">21.30%</td></tr><tr><td>$1,133,786 and over</td><td class="rate-cell">21.80%</td></tr></tbody></table><p class="text-muted text-sm">BPA: $10,929.</p></div>
+  <div class="province-panel" id="panel-PE"><h3>Prince Edward Island</h3><table class="tax-table"><thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead><tbody><tr><td>$0 &ndash; $32,848</td><td class="rate-cell">9.50%</td></tr><tr><td>$32,849 &ndash; $65,696</td><td class="rate-cell">13.47%</td></tr><tr><td>$65,697 &ndash; $85,000</td><td class="rate-cell">16.60%</td></tr><tr><td>$85,001 &ndash; $100,000</td><td class="rate-cell">17.62%</td></tr><tr><td>$100,001 and over</td><td class="rate-cell">19.00%</td></tr></tbody></table><p class="text-muted text-sm">BPA: $14,250.</p></div>
+  <div class="province-panel" id="panel-NT"><h3>Northwest Territories</h3><table class="tax-table"><thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead><tbody><tr><td>$0 &ndash; $50,730</td><td class="rate-cell">5.90%</td></tr><tr><td>$50,731 &ndash; $101,462</td><td class="rate-cell">8.60%</td></tr><tr><td>$101,463 &ndash; $156,741</td><td class="rate-cell">12.20%</td></tr><tr><td>$156,742 and over</td><td class="rate-cell">14.05%</td></tr></tbody></table><p class="text-muted text-sm">BPA: $17,152.</p></div>
+  <div class="province-panel" id="panel-NU"><h3>Nunavut</h3><table class="tax-table"><thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead><tbody><tr><td>$0 &ndash; $52,477</td><td class="rate-cell">4.00%</td></tr><tr><td>$52,478 &ndash; $104,953</td><td class="rate-cell">7.00%</td></tr><tr><td>$104,954 &ndash; $170,565</td><td class="rate-cell">9.00%</td></tr><tr><td>$170,566 and over</td><td class="rate-cell">11.50%</td></tr></tbody></table><p class="text-muted text-sm">BPA: $19,122.</p></div>
+  <div class="province-panel" id="panel-YT"><h3>Yukon</h3><table class="tax-table"><thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead><tbody><tr><td>$0 &ndash; $57,375</td><td class="rate-cell">6.40%</td></tr><tr><td>$57,376 &ndash; $114,750</td><td class="rate-cell">9.00%</td></tr><tr><td>$114,751 &ndash; $182,685</td><td class="rate-cell">10.90%</td></tr><tr><td>$182,686 &ndash; $513,500</td><td class="rate-cell">12.80%</td></tr><tr><td>$513,501 and over</td><td class="rate-cell">15.00%</td></tr></tbody></table><p class="text-muted text-sm">BPA: $17,152.</p></div>
+  <hr>
+  <p class="text-muted text-sm">Use the <a href="estimator.html">tax estimator</a> for a personalized calculation. This is not tax advice.</p>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div><div class="site-footer__brand">TaxBench.ca</div><p class="site-footer__desc">Editorial tax resources for Canadians. Not affiliated with the Canada Revenue Agency.</p></div>
+      <div><h4>Resources</h4><ul><li><a href="articles.html">Articles</a></li><li><a href="tax-tips.html">Tax Tips</a></li><li><a href="personal-tax-rates.html">Personal Rates</a></li><li><a href="corporate-tax-rates.html">Corporate Rates</a></li><li><a href="estimator.html">Tax Estimator</a></li></ul></div>
+      <div><h4>Site</h4><ul><li><a href="about.html">About</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
+    </div>
+    <div class="site-footer__bottom"><span>&copy; 2026 TaxBench.ca.</span><span>For educational purposes only. Not tax advice.</span></div>
+  </div>
+</footer>
+<script>
+(function(){var t=document.getElementById("province-tabs");t.addEventListener("click",function(e){var b=e.target.closest(".rates-tab");if(!b)return;t.querySelectorAll(".rates-tab").forEach(function(x){x.classList.remove("rates-tab--active")});b.classList.add("rates-tab--active");document.querySelectorAll(".province-panel").forEach(function(p){p.classList.remove("province-panel--active")});var pan=document.getElementById("panel-"+b.dataset.province);if(pan)pan.classList.add("province-panel--active")})})();
+</script>
+</body>
+</html>

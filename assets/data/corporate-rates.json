@@ -1,0 +1,314 @@
+{
+  "2015": {
+    "year": 2015,
+    "federal": {
+      "generalRate": 0.15,
+      "smallBusinessRate": 0.11,
+      "smallBusinessLimit": 500000
+    },
+    "provinces": {
+      "ON": {
+        "name": "ON",
+        "generalRate": 0.115,
+        "smallBusinessRate": 0.045,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.265,
+        "combinedSmallBusiness": 0.155
+      },
+      "BC": {
+        "name": "BC",
+        "generalRate": 0.1,
+        "smallBusinessRate": 0.025,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.25,
+        "combinedSmallBusiness": 0.135
+      }
+    }
+  },
+  "2016": {
+    "year": 2016,
+    "federal": {
+      "generalRate": 0.15,
+      "smallBusinessRate": 0.105,
+      "smallBusinessLimit": 500000
+    },
+    "provinces": {
+      "ON": {
+        "name": "ON",
+        "generalRate": 0.115,
+        "smallBusinessRate": 0.045,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.265,
+        "combinedSmallBusiness": 0.15
+      },
+      "BC": {
+        "name": "BC",
+        "generalRate": 0.1,
+        "smallBusinessRate": 0.025,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.25,
+        "combinedSmallBusiness": 0.13
+      }
+    }
+  },
+  "2017": {
+    "year": 2017,
+    "federal": {
+      "generalRate": 0.15,
+      "smallBusinessRate": 0.105,
+      "smallBusinessLimit": 500000
+    },
+    "provinces": {
+      "ON": {
+        "name": "ON",
+        "generalRate": 0.115,
+        "smallBusinessRate": 0.045,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.265,
+        "combinedSmallBusiness": 0.15
+      },
+      "BC": {
+        "name": "BC",
+        "generalRate": 0.11,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.26,
+        "combinedSmallBusiness": 0.125
+      }
+    }
+  },
+  "2018": {
+    "year": 2018,
+    "federal": {
+      "generalRate": 0.15,
+      "smallBusinessRate": 0.1,
+      "smallBusinessLimit": 500000
+    },
+    "provinces": {
+      "ON": {
+        "name": "ON",
+        "generalRate": 0.115,
+        "smallBusinessRate": 0.035,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.265,
+        "combinedSmallBusiness": 0.135
+      },
+      "BC": {
+        "name": "BC",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.12000000000000001
+      }
+    }
+  },
+  "2019": {
+    "year": 2019,
+    "federal": {
+      "generalRate": 0.15,
+      "smallBusinessRate": 0.09,
+      "smallBusinessLimit": 500000
+    },
+    "provinces": {
+      "ON": {
+        "name": "ON",
+        "generalRate": 0.115,
+        "smallBusinessRate": 0.032,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.265,
+        "combinedSmallBusiness": 0.122
+      },
+      "BC": {
+        "name": "BC",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.11
+      }
+    }
+  },
+  "2020": {
+    "year": 2020,
+    "federal": {
+      "generalRate": 0.15,
+      "smallBusinessRate": 0.09,
+      "smallBusinessLimit": 500000
+    },
+    "provinces": {
+      "ON": {
+        "name": "ON",
+        "generalRate": 0.115,
+        "smallBusinessRate": 0.032,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.265,
+        "combinedSmallBusiness": 0.122
+      },
+      "BC": {
+        "name": "BC",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.11
+      }
+    }
+  },
+  "2021": {
+    "year": 2021,
+    "federal": {
+      "generalRate": 0.15,
+      "smallBusinessRate": 0.09,
+      "smallBusinessLimit": 500000
+    },
+    "provinces": {
+      "ON": {
+        "name": "ON",
+        "generalRate": 0.115,
+        "smallBusinessRate": 0.032,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.265,
+        "combinedSmallBusiness": 0.122
+      },
+      "BC": {
+        "name": "BC",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.11
+      }
+    }
+  },
+  "2022": {
+    "year": 2022,
+    "federal": {
+      "generalRate": 0.15,
+      "smallBusinessRate": 0.09,
+      "smallBusinessLimit": 500000
+    },
+    "provinces": {
+      "ON": {
+        "name": "ON",
+        "generalRate": 0.115,
+        "smallBusinessRate": 0.032,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.265,
+        "combinedSmallBusiness": 0.122
+      },
+      "BC": {
+        "name": "BC",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.11
+      }
+    }
+  },
+  "2023": {
+    "year": 2023,
+    "federal": {
+      "generalRate": 0.15,
+      "smallBusinessRate": 0.09,
+      "smallBusinessLimit": 500000
+    },
+    "provinces": {
+      "ON": {
+        "name": "ON",
+        "generalRate": 0.115,
+        "smallBusinessRate": 0.032,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.265,
+        "combinedSmallBusiness": 0.122
+      },
+      "BC": {
+        "name": "BC",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.11
+      }
+    }
+  },
+  "2024": {
+    "year": 2024,
+    "federal": {
+      "generalRate": 0.15,
+      "smallBusinessRate": 0.09,
+      "smallBusinessLimit": 500000
+    },
+    "provinces": {
+      "ON": {
+        "name": "ON",
+        "generalRate": 0.115,
+        "smallBusinessRate": 0.032,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.265,
+        "combinedSmallBusiness": 0.122
+      },
+      "BC": {
+        "name": "BC",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.11
+      }
+    }
+  },
+  "2025": {
+    "year": 2025,
+    "federal": {
+      "generalRate": 0.15,
+      "smallBusinessRate": 0.09,
+      "smallBusinessLimit": 500000
+    },
+    "provinces": {
+      "ON": {
+        "name": "ON",
+        "generalRate": 0.115,
+        "smallBusinessRate": 0.032,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.265,
+        "combinedSmallBusiness": 0.122
+      },
+      "BC": {
+        "name": "BC",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.11
+      }
+    }
+  },
+  "2026": {
+    "year": 2026,
+    "federal": {
+      "generalRate": 0.15,
+      "smallBusinessRate": 0.09,
+      "smallBusinessLimit": 500000
+    },
+    "provinces": {
+      "ON": {
+        "name": "ON",
+        "generalRate": 0.115,
+        "smallBusinessRate": 0.032,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.265,
+        "combinedSmallBusiness": 0.122
+      },
+      "BC": {
+        "name": "BC",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.11
+      }
+    }
+  }
+}

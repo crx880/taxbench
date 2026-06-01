@@ -1,0 +1,41 @@
+{
+  "year": 2026,
+  "description": "2026 Canadian corporate income tax rates",
+  "federal": {
+    "generalRate": 0.15,
+    "smallBusinessRate": 0.09,
+    "smallBusinessLimit": 500000,
+    "smallBusinessLimitNote": "Small business deduction applies to the first $500,000 of active business income. Limit is prorated for short tax years and may be reduced if taxable capital exceeds $10 million."
+  },
+  "provinces": {
+    "AB": { "name": "Alberta", "generalRate": 0.08, "smallBusinessRate": 0.02, "smallBusinessLimit": 500000 },
+    "BC": { "name": "British Columbia", "generalRate": 0.12, "smallBusinessRate": 0.02, "smallBusinessLimit": 500000 },
+    "MB": { "name": "Manitoba", "generalRate": 0.12, "smallBusinessRate": 0.00, "smallBusinessLimit": 500000 },
+    "NB": { "name": "New Brunswick", "generalRate": 0.14, "smallBusinessRate": 0.025, "smallBusinessLimit": 500000 },
+    "NL": { "name": "Newfoundland and Labrador", "generalRate": 0.15, "smallBusinessRate": 0.03, "smallBusinessLimit": 500000 },
+    "NS": { "name": "Nova Scotia", "generalRate": 0.14, "smallBusinessRate": 0.025, "smallBusinessLimit": 500000 },
+    "ON": { "name": "Ontario", "generalRate": 0.115, "smallBusinessRate": 0.032, "smallBusinessLimit": 500000 },
+    "PE": { "name": "Prince Edward Island", "generalRate": 0.16, "smallBusinessRate": 0.01, "smallBusinessLimit": 500000 },
+    "QC": { "name": "Quebec", "generalRate": 0.115, "smallBusinessRate": 0.032, "smallBusinessLimit": 500000 },
+    "SK": { "name": "Saskatchewan", "generalRate": 0.12, "smallBusinessRate": 0.01, "smallBusinessLimit": 600000 },
+    "NT": { "name": "Northwest Territories", "generalRate": 0.115, "smallBusinessRate": 0.02, "smallBusinessLimit": 500000 },
+    "NU": { "name": "Nunavut", "generalRate": 0.12, "smallBusinessRate": 0.03, "smallBusinessLimit": 500000 },
+    "YT": { "name": "Yukon", "generalRate": 0.12, "smallBusinessRate": 0.00, "smallBusinessLimit": 500000 }
+  },
+  "combinedRates": {
+    "AB": { "general": 0.23, "smallBusiness": 0.11 },
+    "BC": { "general": 0.27, "smallBusiness": 0.11 },
+    "MB": { "general": 0.27, "smallBusiness": 0.09 },
+    "NB": { "general": 0.29, "smallBusiness": 0.115 },
+    "NL": { "general": 0.30, "smallBusiness": 0.12 },
+    "NS": { "general": 0.29, "smallBusiness": 0.115 },
+    "ON": { "general": 0.265, "smallBusiness": 0.122 },
+    "PE": { "general": 0.31, "smallBusiness": 0.10 },
+    "QC": { "general": 0.265, "smallBusiness": 0.122 },
+    "SK": { "general": 0.27, "smallBusiness": 0.10 },
+    "NT": { "general": 0.265, "smallBusiness": 0.11 },
+    "NU": { "general": 0.27, "smallBusiness": 0.12 },
+    "YT": { "general": 0.27, "smallBusiness": 0.09 }
+  },
+  "notes": "Provincial corporate rates may also include additional taxes or credits for specific industries. Investment income earned within a CCPC is generally taxed at the highest corporate rate with a refundable mechanism. Verify rates against official CRA and provincial publications."
+}

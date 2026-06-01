@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-CA" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personal Tax Estimator 2026 &mdash; TaxBench.ca</title>
+  <meta name="description" content="Free 2026 Canadian personal income tax estimator. Calculate federal and provincial tax on employment, self-employment, rental, interest, capital gains, and dividends for any province.">
+  <meta property="og:title" content="2026 Canadian Personal Tax Estimator">
+  <meta property="og:description" content="Free estimator for 2026 federal and provincial income tax on all income types.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+  <script defer src="assets/js/compare-data.js"></script>
+  <script defer src="assets/js/estimator.js"></script>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="index.html" class="site-nav__brand"><img src="../assets/images/logo.png" alt="TaxBench.ca" height="64" style="height:64px;width:auto"></a>
+    <button class="mobile-nav-toggle" aria-label="Toggle navigation"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    <ul class="site-nav__links">
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="tax-tips.html">Tax&nbsp;Tips</a></li>
+      <li class="nav-dropdown">
+        <a href="personal-tax-rates.html" class="nav-dropdown__toggle">Rates</a>
+        <ul class="nav-dropdown__menu"><li><a href="personal-tax-rates.html">Personal</a></li><li><a href="corporate-tax-rates.html">Corporate</a></li></ul>
+      </li>
+      <li class="nav-dropdown">
+        <a href="estimator.html" class="nav-dropdown__toggle">Estimator</a>
+        <ul class="nav-dropdown__menu"><li><a href="estimator.html">Personal</a></li><li><a href="corporate-estimator.html">Corporate</a></li></ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><button class="theme-toggle">Dark</button></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+<header class="page-header container">
+  <p class="page-header__kicker">2026 Tax Year</p>
+  <h1 class="page-header__title">Personal Income Tax Estimator</h1>
+  <p class="page-header__subtitle">Enter your income by type and province for a detailed breakdown of federal and provincial tax, including dividend gross-up, dividend tax credits, and non-taxable capital gains.</p>
+</header>
+<section class="container" style="padding-top:0">
+  <div class="estimator">
+    <h2 class="estimator__heading">Your Income</h2>
+    <form id="estimator-form" class="estimator__form" onsubmit="return false">
+      <fieldset class="estimator__group">
+        <legend class="estimator__group-title">Employment &amp; Self-Employment</legend>
+        <div class="estimator__row">
+          <div class="estimator__field"><label class="estimator__label" for="est-employment">Employment income (T4)</label><input id="est-employment" class="estimator__input" type="number" min="0" step="500" value="75000" placeholder="0"><span class="estimator__hint">Salary, wages, commissions, bonuses.</span></div>
+          <div class="estimator__field"><label class="estimator__label" for="est-selfEmployment">Self-employment income</label><input id="est-selfEmployment" class="estimator__input" type="number" min="0" step="500" value="0" placeholder="0"><span class="estimator__hint">Business or professional income (net).</span></div>
+        </div>
+      </fieldset>
+      <fieldset class="estimator__group">
+        <legend class="estimator__group-title">Investment &amp; Other Income</legend>
+        <div class="estimator__row">
+          <div class="estimator__field"><label class="estimator__label" for="est-rental">Rental income (net)</label><input id="est-rental" class="estimator__input" type="number" min="0" step="500" value="0" placeholder="0"><span class="estimator__hint">Net rental income after expenses.</span></div>
+          <div class="estimator__field"><label class="estimator__label" for="est-interest">Interest income</label><input id="est-interest" class="estimator__input" type="number" min="0" step="100" value="0" placeholder="0"><span class="estimator__hint">GIC, bond, and savings account interest. 100% taxable.</span></div>
+        </div>
+        <div class="estimator__row">
+          <div class="estimator__field"><label class="estimator__label" for="est-capitalGains">Capital gains (total)</label><input id="est-capitalGains" class="estimator__input" type="number" min="0" step="500" value="0" placeholder="0"><span class="estimator__hint">50% inclusion rate. 50% is tax-free.</span></div>
+          <div class="estimator__field"><label class="estimator__label" for="est-eligibleDividends">Eligible dividends</label><input id="est-eligibleDividends" class="estimator__input" type="number" min="0" step="500" value="0" placeholder="0"><span class="estimator__hint">From public corporations. 38% gross-up, enhanced DTC.</span></div>
+        </div>
+        <div class="estimator__row">
+          <div class="estimator__field"><label class="estimator__label" for="est-nonEligibleDividends">Non-eligible dividends</label><input id="est-nonEligibleDividends" class="estimator__input" type="number" min="0" step="500" value="0" placeholder="0"><span class="estimator__hint">From CCPCs (small business). 15% gross-up, lower DTC.</span></div>
+        </div>
+      </fieldset>
+      <fieldset class="estimator__group">
+        <legend class="estimator__group-title">Province</legend>
+        <div class="estimator__field">
+          <label class="estimator__label" for="estimator-province">Province or territory of residence</label>
+          <select id="estimator-province" class="estimator__select">
+            <option value="ON" selected>Ontario</option><option value="BC">British Columbia</option><option value="AB">Alberta</option><option value="QC">Quebec</option><option value="MB">Manitoba</option><option value="SK">Saskatchewan</option><option value="NS">Nova Scotia</option><option value="NB">New Brunswick</option><option value="NL">Newfoundland and Labrador</option><option value="PE">Prince Edward Island</option><option value="NT">Northwest Territories</option><option value="NU">Nunavut</option><option value="YT">Yukon</option>
+          </select>
+        </div>
+        <div class="estimator__field" style="margin-top:12px">
+          <label class="estimator__label" style="display:flex;align-items:center;gap:8px;cursor:pointer"><input type="checkbox" id="estimator-compare" style="width:18px;height:18px">Compare with year:</label>
+          <select id="estimator-compare-year" class="estimator__select" style="max-width:120px;margin-top:4px;width:auto"><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option></select>
+        </div>
+      </fieldset>
+    </form>
+    <div id="estimator-results" class="estimator__results"></div>
+  </div>
+  <div class="callout" style="margin-top:var(--space-8)">
+    <p class="callout__title">Important Limitations</p>
+    <p>This estimator does <strong>not</strong> account for: other tax credits (spousal, age, disability, tuition, medical), RRSP deductions, child care expenses, employment expenses, or refundable credits. This is not tax advice.</p>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div><div class="site-footer__brand">TaxBench.ca</div><p class="site-footer__desc">Editorial tax resources for Canadians. Not affiliated with the Canada Revenue Agency.</p></div>
+      <div><h4>Resources</h4><ul><li><a href="articles.html">Articles</a></li><li><a href="tax-tips.html">Tax Tips</a></li><li><a href="personal-tax-rates.html">Personal Rates</a></li><li><a href="corporate-tax-rates.html">Corporate Rates</a></li><li><a href="estimator.html">Tax Estimator</a></li></ul></div>
+      <div><h4>Site</h4><ul><li><a href="about.html">About</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
+    </div>
+    <div class="site-footer__bottom"><span>&copy; 2026 TaxBench.ca.</span><span>For educational purposes only. Not tax advice.</span></div>
+  </div>
+</footer>
+</body>
+</html>

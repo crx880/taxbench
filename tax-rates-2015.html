@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en-CA" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2015 Personal Tax Rates &mdash; TaxBench.ca</title>
+  <meta name="description" content="2015 federal and provincial personal income tax rates for Canada.">
+
+  <meta property="og:title" content="2015 Personal Tax Rates in Canada">
+  <meta property="og:description" content="Federal and provincial personal income tax rates for 2015.">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+  <style>
+    .rates-tabs { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 1.5rem; }
+    .rates-tab { padding: 6px 10px; font-size: 0.75rem; font-weight: 600; font-family: var(--font-mono); border: 1px solid var(--color-border); border-radius: var(--radius-sm); background: var(--color-bg-card); color: var(--color-text-secondary); cursor: pointer; transition: all 150ms ease; }
+    .rates-tab:hover { border-color: var(--color-accent); color: var(--color-accent); }
+    .rates-tab--active { background: var(--color-accent); color: #fff; border-color: var(--color-accent); }
+    .province-panel { display: none; }
+    .province-panel--active { display: block; }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="container">
+    <a href="index.html" class="site-nav__brand" aria-label="TaxBench.ca home"><img src="../assets/images/logo.png" alt="TaxBench.ca" height="64" style="height:64px;width:auto"></a>
+    <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+    <ul class="site-nav__links">
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="tax-tips.html">Tax&nbsp;Tips</a></li>
+      <li><a href="personal-tax-rates.html">Rates</a></li>
+      <li><a href="estimator.html">Estimator</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><button class="theme-toggle" aria-label="Toggle dark mode">Dark</button></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+<header class="page-header container container-narrow">
+  <p class="page-header__kicker">2015 Tax Year</p>
+  <h1 class="page-header__title">Personal Income Tax Rates &mdash; 2015</h1>
+  <p class="page-header__subtitle">Federal and provincial tax brackets and marginal rates for the 2015 tax year.</p>
+</header>
+
+<section class="container" style="padding-top:0">
+
+  <h2>Federal Tax Brackets</h2>
+  <table class="tax-table">
+    <thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead>
+    <tbody>
+        <tr><td>$0 &ndash; $0</td><td class="rate-cell">15.00%</td></tr>
+        <tr><td>$0 &ndash; $44,702</td><td class="rate-cell">22.00%</td></tr>
+        <tr><td>$0 &ndash; $89,402</td><td class="rate-cell">26.00%</td></tr>
+        <tr><td>$0 &ndash; $138,587</td><td class="rate-cell">29.00%</td></tr>
+    </tbody>
+  </table>
+  <p class="text-muted text-sm">Basic personal amount: $44,701.</p>
+
+  <hr>
+
+  <h2>Provincial Tax Brackets</h2>
+  <p class="text-secondary" style="margin-bottom:1rem">Select a province or territory to view its 2015 brackets.</p>
+
+<div class="rates-tabs" id="prov-tabs-2015" role="tablist">
+      <button class="rates-tab rates-tab--active" role="tab" data-prov="AB">AB</button>
+      <button class="rates-tab" role="tab" data-prov="BC">BC</button>
+      <button class="rates-tab" role="tab" data-prov="MB">MB</button>
+      <button class="rates-tab" role="tab" data-prov="NB">NB</button>
+      <button class="rates-tab" role="tab" data-prov="NL">NL</button>
+      <button class="rates-tab" role="tab" data-prov="NS">NS</button>
+      <button class="rates-tab" role="tab" data-prov="NT">NT</button>
+      <button class="rates-tab" role="tab" data-prov="NU">NU</button>
+      <button class="rates-tab" role="tab" data-prov="ON">ON</button>
+      <button class="rates-tab" role="tab" data-prov="PE">PE</button>
+      <button class="rates-tab" role="tab" data-prov="QC">QC</button>
+      <button class="rates-tab" role="tab" data-prov="SK">SK</button>
+      <button class="rates-tab" role="tab" data-prov="YT">YT</button>
+    </div>
+
+    <div class="province-panel province-panel--active" id="panel-2015-AB">
+      <h3>Alberta</h3>
+      <table class="tax-table">
+        <thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead>
+        <tbody>
+          <tr><td>$0 &ndash; $0</td><td class="rate-cell">10.00%</td></tr>
+          <tr><td>$0 &ndash; $125,001</td><td class="rate-cell">10.50%</td></tr>
+          <tr><td>$0 &ndash; $150,001</td><td class="rate-cell">10.75%</td></tr>
+          <tr><td>$0 &ndash; $200,001</td><td class="rate-cell">11.00%</td></tr>
+          <tr><td>$0 &ndash; $300,001</td><td class="rate-cell">11.25%</td></tr>
+        </tbody>
+      </table>
+      <p class="text-muted text-sm">Basic personal amount: $125,000.</p>
+    </div>
+
+    <div class="province-panel" id="panel-2015-BC">
+      <h3>British Columbia</h3>
+      <table class="tax-table">
+        <thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead>
+        <tbody>
+          <tr><td>$0 &ndash; $0</td><td class="rate-cell">5.06%</td></tr>
+          <tr><td>$0 &ndash; $37,870</td><td class="rate-cell">7.70%</td></tr>
+          <tr><td>$0 &ndash; $75,741</td><td class="rate-cell">10.50%</td></tr>
+          <tr><td>$0 &ndash; $86,959</td><td class="rate-cell">12.29%</td></tr>
+          <tr><td>$0 &ndash; $105,593</td><td class="rate-cell">14.70%</td></tr>
+          <tr><td>$0 &ndash; $151,051</td><td class="rate-cell">16.80%</td></tr>
+        </tbody>
+      </table>
+      <p class="text-muted text-sm">Basic personal amount: $37,869.</p>
+    </div>
+
+    <div class="province-panel" id="panel-2015-MB">
+      <h3>Manitoba</h3>
+      <table class="tax-table">
+        <thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead>
+        <tbody>
+          <tr><td>$0 &ndash; $0</td><td class="rate-cell">10.80%</td></tr>
+          <tr><td>$0 &ndash; $31,001</td><td class="rate-cell">12.75%</td></tr>
+          <tr><td>$0 &ndash; $67,001</td><td class="rate-cell">17.40%</td></tr>
+        </tbody>
+      </table>
+      <p class="text-muted text-sm">Basic personal amount: $31,000.</p>
+    </div>
+
+    <div class="province-panel" id="panel-2015-NB">
+      <h3>New Brunswick</h3>
+      <table class="tax-table">
+        <thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead>
+        <tbody>
+          <tr><td>$0 &ndash; $0</td><td class="rate-cell">9.68%</td></tr>
+          <tr><td>$0 &ndash; $39,974</td><td class="rate-cell">14.82%</td></tr>
+          <tr><td>$0 &ndash; $79,947</td><td class="rate-cell">16.52%</td></tr>
+          <tr><td>$0 &ndash; $129,976</td><td class="rate-cell">17.84%</td></tr>
+          <tr><td>$0 &ndash; $150,001</td><td class="rate-cell">21.00%</td></tr>
+          <tr><td>$0 &ndash; $250,001</td><td class="rate-cell">25.75%</td></tr>
+        </tbody>
+      </table>
+      <p class="text-muted text-sm">Basic personal amount: $39,973.</p>
+    </div>
+
+    <div class="province-panel" id="panel-2015-NL">
+      <h3>Newfoundland and Labrador</h3>
+      <table class="tax-table">
+        <thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead>
+        <tbody>
+          <tr><td>$0 &ndash; $0</td><td class="rate-cell">7.70%</td></tr>
+          <tr><td>$0 &ndash; $35,009</td><td class="rate-cell">12.50%</td></tr>
+          <tr><td>$0 &ndash; $70,016</td><td class="rate-cell">13.30%</td></tr>
+          <tr><td>$0 &ndash; $125,001</td><td class="rate-cell">13.80%</td></tr>
+          <tr><td>$0 &ndash; $175,001</td><td class="rate-cell">14.30%</td></tr>
+        </tbody>
+      </table>
+      <p class="text-muted text-sm">Basic personal amount: $35,008.</p>
+    </div>
+
+    <div class="province-panel" id="panel-2015-NS">
+      <h3>Nova Scotia</h3>
+      <table class="tax-table">
+        <thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead>
+        <tbody>
+          <tr><td>$0 &ndash; $0</td><td class="rate-cell">8.79%</td></tr>
+          <tr><td>$0 &ndash; $29,591</td><td class="rate-cell">14.95%</td></tr>
+          <tr><td>$0 &ndash; $59,181</td><td class="rate-cell">16.67%</td></tr>
+          <tr><td>$0 &ndash; $93,001</td><td class="rate-cell">17.50%</td></tr>
+          <tr><td>$0 &ndash; $150,001</td><td class="rate-cell">21.00%</td></tr>
+        </tbody>
+      </table>
+      <p class="text-muted text-sm">Basic personal amount: $29,590.</p>
+    </div>
+
+    <div class="province-panel" id="panel-2015-NT">
+      <h3>Northwest Territories</h3>
+      <table class="tax-table">
+        <thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead>
+        <tbody>
+          <tr><td>$0 &ndash; $0</td><td class="rate-cell">5.90%</td></tr>
+          <tr><td>$0 &ndash; $40,485</td><td class="rate-cell">8.60%</td></tr>
+          <tr><td>$0 &ndash; $80,972</td><td class="rate-cell">12.20%</td></tr>
+          <tr><td>$0 &ndash; $131,642</td><td class="rate-cell">14.05%</td></tr>
+        </tbody>
+      </table>
+      <p class="text-muted text-sm">Basic personal amount: $40,484.</p>
+    </div>
+
+    <div class="province-panel" id="panel-2015-NU">
+      <h3>Nunavut</h3>
+      <table class="tax-table">
+        <thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead>
+        <tbody>
+          <tr><td>$0 &ndash; $0</td><td class="rate-cell">4.00%</td></tr>
+          <tr><td>$0 &ndash; $42,623</td><td class="rate-cell">7.00%</td></tr>
+          <tr><td>$0 &ndash; $85,244</td><td class="rate-cell">9.00%</td></tr>
+          <tr><td>$0 &ndash; $138,587</td><td class="rate-cell">11.50%</td></tr>
+        </tbody>
+      </table>
+      <p class="text-muted text-sm">Basic personal amount: $42,622.</p>
+    </div>
+
+    <div class="province-panel" id="panel-2015-ON">
+      <h3>Ontario</h3>
+      <table class="tax-table">
+        <thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead>
+        <tbody>
+          <tr><td>$0 &ndash; $0</td><td class="rate-cell">5.05%</td></tr>
+          <tr><td>$0 &ndash; $40,923</td><td class="rate-cell">9.15%</td></tr>
+          <tr><td>$0 &ndash; $80,848</td><td class="rate-cell">11.16%</td></tr>
+          <tr><td>$0 &ndash; $150,001</td><td class="rate-cell">12.16%</td></tr>
+          <tr><td>$0 &ndash; $220,001</td><td class="rate-cell">13.16%</td></tr>
+        </tbody>
+      </table>
+      <p class="text-muted text-sm">Basic personal amount: $40,922.</p>
+    </div>
+
+    <div class="province-panel" id="panel-2015-PE">
+      <h3>Prince Edward Island</h3>
+      <table class="tax-table">
+        <thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead>
+        <tbody>
+          <tr><td>$0 &ndash; $0</td><td class="rate-cell">9.80%</td></tr>
+          <tr><td>$0 &ndash; $31,985</td><td class="rate-cell">13.80%</td></tr>
+          <tr><td>$0 &ndash; $63,970</td><td class="rate-cell">16.70%</td></tr>
+        </tbody>
+      </table>
+      <p class="text-muted text-sm">Basic personal amount: $31,984.</p>
+    </div>
+
+    <div class="province-panel" id="panel-2015-QC">
+      <h3>Quebec</h3>
+      <table class="tax-table">
+        <thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead>
+        <tbody>
+        </tbody>
+      </table>
+      <p class="text-muted text-sm">Basic personal amount: $0.</p>
+    </div>
+
+    <div class="province-panel" id="panel-2015-SK">
+      <h3>Saskatchewan</h3>
+      <table class="tax-table">
+        <thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead>
+        <tbody>
+          <tr><td>$0 &ndash; $0</td><td class="rate-cell">11.00%</td></tr>
+          <tr><td>$0 &ndash; $44,029</td><td class="rate-cell">13.00%</td></tr>
+          <tr><td>$0 &ndash; $125,796</td><td class="rate-cell">15.00%</td></tr>
+        </tbody>
+      </table>
+      <p class="text-muted text-sm">Basic personal amount: $44,028.</p>
+    </div>
+
+    <div class="province-panel" id="panel-2015-YT">
+      <h3>Yukon</h3>
+      <table class="tax-table">
+        <thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead>
+        <tbody>
+          <tr><td>$0 &ndash; $0</td><td class="rate-cell">6.40%</td></tr>
+          <tr><td>$0 &ndash; $44,702</td><td class="rate-cell">9.00%</td></tr>
+          <tr><td>$0 &ndash; $89,402</td><td class="rate-cell">10.90%</td></tr>
+          <tr><td>$0 &ndash; $138,587</td><td class="rate-cell">12.80%</td></tr>
+          <tr><td>$0 &ndash; $500,001</td><td class="rate-cell">15.00%</td></tr>
+        </tbody>
+      </table>
+      <p class="text-muted text-sm">Basic personal amount: $44,701.</p>
+    </div>
+
+
+  <hr>
+  <p class="text-muted text-sm">Rates shown are for the 2015 tax year. Verify against official CRA publications. This is not tax advice.</p>
+
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div><div class="site-footer__brand">TaxBench.ca</div><p class="site-footer__desc">Editorial tax resources for Canadians. Not affiliated with the Canada Revenue Agency.</p></div>
+      <div><h4>Resources</h4><ul><li><a href="articles.html">Articles</a></li><li><a href="tax-tips.html">Tax Tips</a></li><li><a href="personal-tax-rates.html">Personal Rates</a></li><li><a href="corporate-tax-rates.html">Corporate Rates</a></li><li><a href="estimator.html">Tax Estimator</a></li></ul></div>
+      <div><h4>Site</h4><ul><li><a href="about.html">About</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
+    </div>
+    <div class="site-footer__bottom"><span>&copy; 2015 TaxBench.ca.</span><span>For educational purposes only. Not tax advice.</span></div>
+  </div>
+</footer>
+
+<script>
+(function() {
+  var tabs = document.getElementById("prov-tabs-2015");
+  if (!tabs) return;
+  tabs.addEventListener("click", function(e) {
+    var tab = e.target.closest(".rates-tab");
+    if (!tab) return;
+    tabs.querySelectorAll(".rates-tab").forEach(function(t) { t.classList.remove("rates-tab--active"); });
+    tab.classList.add("rates-tab--active");
+    document.querySelectorAll(".province-panel").forEach(function(p) { p.classList.remove("province-panel--active"); });
+    var panel = document.getElementById("panel-2015-" + tab.dataset.prov);
+    if (panel) panel.classList.add("province-panel--active");
+  });
+})();
+</script>
+
+</body>
+</html>

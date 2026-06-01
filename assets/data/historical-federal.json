@@ -1,0 +1,150 @@
+{
+  "description": "Historical Canadian federal income tax brackets and basic personal amounts, 2015-2026. Sources: CRA API (content fragments) and CRA indexation page.",
+  "years": {
+    "2015": {
+      "brackets": [
+        { "min": 0, "max": 44701, "rate": 0.15 },
+        { "min": 44701, "max": 89401, "rate": 0.22 },
+        { "min": 89401, "max": 138586, "rate": 0.26 },
+        { "min": 138586, "max": null, "rate": 0.29 }
+      ],
+      "basicPersonalAmount": 11327,
+      "cppRate": 0.0495, "cppMax": 53600, "cppExemption": 3500,
+      "eiRate": 0.0188, "eiMax": 49500
+    },
+    "2016": {
+      "brackets": [
+        { "min": 0, "max": 45282, "rate": 0.15 },
+        { "min": 45282, "max": 90563, "rate": 0.205 },
+        { "min": 90563, "max": 140388, "rate": 0.26 },
+        { "min": 140388, "max": 200000, "rate": 0.29 },
+        { "min": 200000, "max": null, "rate": 0.33 }
+      ],
+      "basicPersonalAmount": 11474,
+      "cppRate": 0.0495, "cppMax": 54900, "cppExemption": 3500,
+      "eiRate": 0.0188, "eiMax": 50800
+    },
+    "2017": {
+      "brackets": [
+        { "min": 0, "max": 45916, "rate": 0.15 },
+        { "min": 45916, "max": 91831, "rate": 0.205 },
+        { "min": 91831, "max": 142353, "rate": 0.26 },
+        { "min": 142353, "max": 202800, "rate": 0.29 },
+        { "min": 202800, "max": null, "rate": 0.33 }
+      ],
+      "basicPersonalAmount": 11635,
+      "cppRate": 0.0495, "cppMax": 55300, "cppExemption": 3500,
+      "eiRate": 0.0163, "eiMax": 51300
+    },
+    "2018": {
+      "brackets": [
+        { "min": 0, "max": 46605, "rate": 0.15 },
+        { "min": 46605, "max": 93208, "rate": 0.205 },
+        { "min": 93208, "max": 144489, "rate": 0.26 },
+        { "min": 144489, "max": 205842, "rate": 0.29 },
+        { "min": 205842, "max": null, "rate": 0.33 }
+      ],
+      "basicPersonalAmount": 11809,
+      "cppRate": 0.0495, "cppMax": 55900, "cppExemption": 3500,
+      "eiRate": 0.0166, "eiMax": 51700
+    },
+    "2019": {
+      "brackets": [
+        { "min": 0, "max": 47630, "rate": 0.15 },
+        { "min": 47630, "max": 95259, "rate": 0.205 },
+        { "min": 95259, "max": 147667, "rate": 0.26 },
+        { "min": 147667, "max": 210371, "rate": 0.29 },
+        { "min": 210371, "max": null, "rate": 0.33 }
+      ],
+      "basicPersonalAmount": 12069,
+      "cppRate": 0.0510, "cppMax": 57400, "cppExemption": 3500,
+      "eiRate": 0.0162, "eiMax": 53100
+    },
+    "2020": {
+      "brackets": [
+        { "min": 0, "max": 48535, "rate": 0.15 },
+        { "min": 48535, "max": 97069, "rate": 0.205 },
+        { "min": 97069, "max": 150473, "rate": 0.26 },
+        { "min": 150473, "max": 214368, "rate": 0.29 },
+        { "min": 214368, "max": null, "rate": 0.33 }
+      ],
+      "basicPersonalAmount": 13229,
+      "cppRate": 0.0525, "cppMax": 58700, "cppExemption": 3500,
+      "eiRate": 0.0158, "eiMax": 54200
+    },
+    "2021": {
+      "brackets": [
+        { "min": 0, "max": 49020, "rate": 0.15 },
+        { "min": 49020, "max": 98040, "rate": 0.205 },
+        { "min": 98040, "max": 151978, "rate": 0.26 },
+        { "min": 151978, "max": 216511, "rate": 0.29 },
+        { "min": 216511, "max": null, "rate": 0.33 }
+      ],
+      "basicPersonalAmount": 13808,
+      "cppRate": 0.0545, "cppMax": 61600, "cppExemption": 3500,
+      "eiRate": 0.0158, "eiMax": 56300
+    },
+    "2022": {
+      "brackets": [
+        { "min": 0, "max": 50197, "rate": 0.15 },
+        { "min": 50197, "max": 100392, "rate": 0.205 },
+        { "min": 100392, "max": 155625, "rate": 0.26 },
+        { "min": 155625, "max": 221708, "rate": 0.29 },
+        { "min": 221708, "max": null, "rate": 0.33 }
+      ],
+      "basicPersonalAmount": 14398,
+      "cppRate": 0.0570, "cppMax": 64900, "cppExemption": 3500,
+      "eiRate": 0.0158, "eiMax": 60300
+    },
+    "2023": {
+      "brackets": [
+        { "min": 0, "max": 53359, "rate": 0.15 },
+        { "min": 53359, "max": 106717, "rate": 0.205 },
+        { "min": 106717, "max": 165430, "rate": 0.26 },
+        { "min": 165430, "max": 235675, "rate": 0.29 },
+        { "min": 235675, "max": null, "rate": 0.33 }
+      ],
+      "basicPersonalAmount": 15000,
+      "cppRate": 0.0595, "cppMax": 66600, "cppExemption": 3500,
+      "eiRate": 0.0163, "eiMax": 61500
+    },
+    "2024": {
+      "brackets": [
+        { "min": 0, "max": 55867, "rate": 0.15 },
+        { "min": 55867, "max": 111733, "rate": 0.205 },
+        { "min": 111733, "max": 173205, "rate": 0.26 },
+        { "min": 173205, "max": 246752, "rate": 0.29 },
+        { "min": 246752, "max": null, "rate": 0.33 }
+      ],
+      "basicPersonalAmount": 15705,
+      "cppRate": 0.0595, "cppMax": 68500, "cppExemption": 3500,
+      "eiRate": 0.0166, "eiMax": 63200
+    },
+    "2025": {
+      "brackets": [
+        { "min": 0, "max": 57375, "rate": 0.145 },
+        { "min": 57375, "max": 114750, "rate": 0.205 },
+        { "min": 114750, "max": 177882, "rate": 0.26 },
+        { "min": 177882, "max": 253414, "rate": 0.29 },
+        { "min": 253414, "max": null, "rate": 0.33 }
+      ],
+      "basicPersonalAmount": 16129,
+      "notes": "Lowest rate reduced from 15% to 14% effective July 1, 2025; effective rate for full year is 14.5%",
+      "cppRate": 0.0595, "cppMax": 68500, "cppExemption": 3500,
+      "eiRate": 0.0163, "eiMax": 65700
+    },
+    "2026": {
+      "brackets": [
+        { "min": 0, "max": 58523, "rate": 0.14 },
+        { "min": 58523, "max": 117045, "rate": 0.205 },
+        { "min": 117045, "max": 181440, "rate": 0.26 },
+        { "min": 181440, "max": 258482, "rate": 0.29 },
+        { "min": 258482, "max": null, "rate": 0.33 }
+      ],
+      "basicPersonalAmount": 16452,
+      "notes": "Lowest rate permanently reduced to 14%",
+      "cppRate": 0.0595, "cppMax": 68500, "cppExemption": 3500,
+      "eiRate": 0.0163, "eiMax": 68500
+    }
+  }
+}

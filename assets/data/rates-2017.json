@@ -1,0 +1,405 @@
+{
+  "year": 2017,
+  "federal": {
+    "brackets": [
+      {
+        "min": 0,
+        "max": 45916,
+        "rate": 0.15
+      },
+      {
+        "min": 45917,
+        "max": 91831,
+        "rate": 0.205
+      },
+      {
+        "min": 91832,
+        "max": 142353,
+        "rate": 0.26
+      },
+      {
+        "min": 142354,
+        "max": 202800,
+        "rate": 0.29
+      },
+      {
+        "min": 202801,
+        "max": null,
+        "rate": 0.33
+      }
+    ],
+    "basicPersonalAmount": 45916,
+    "bpaReductionThreshold": 99999999,
+    "bpaMinimum": 45916,
+    "eligibleDividendGrossUp": 0.38,
+    "eligibleDividendCredit": 0.150198,
+    "nonEligibleDividendGrossUp": 0.15,
+    "nonEligibleDividendCredit": 0.090301,
+    "capitalGainsInclusion": 0.5
+  },
+  "provinces": {
+    "ON": {
+      "name": "Ontario",
+      "brackets": [
+        {
+          "min": 0,
+          "max": 42201,
+          "r": 0.050499999999999996
+        },
+        {
+          "min": 42202,
+          "max": 84404,
+          "r": 0.0915
+        },
+        {
+          "min": 84405,
+          "max": 150000,
+          "r": 0.1116
+        },
+        {
+          "min": 150001,
+          "max": 220000,
+          "r": 0.1216
+        },
+        {
+          "min": 220001,
+          "max": null,
+          "r": 0.1316
+        }
+      ],
+      "bpa": 42201,
+      "edivTC": 0.1,
+      "nedivTC": 0.03
+    },
+    "BC": {
+      "name": "British Columbia",
+      "brackets": [
+        {
+          "min": 0,
+          "max": 38898,
+          "r": 0.0506
+        },
+        {
+          "min": 38899,
+          "max": 77797,
+          "r": 0.077
+        },
+        {
+          "min": 77798,
+          "max": 89320,
+          "r": 0.105
+        },
+        {
+          "min": 89321,
+          "max": 108460,
+          "r": 0.1229
+        },
+        {
+          "min": 108461,
+          "max": null,
+          "r": 0.147
+        }
+      ],
+      "bpa": 38898,
+      "edivTC": 0.1,
+      "nedivTC": 0.03
+    },
+    "AB": {
+      "name": "Alberta",
+      "brackets": [
+        {
+          "min": 0,
+          "max": 126625,
+          "r": 0.1
+        },
+        {
+          "min": 126626,
+          "max": 151950,
+          "r": 0.12
+        },
+        {
+          "min": 151951,
+          "max": 202600,
+          "r": 0.13
+        },
+        {
+          "min": 202601,
+          "max": 303900,
+          "r": 0.14
+        },
+        {
+          "min": 303901,
+          "max": null,
+          "r": 0.15
+        }
+      ],
+      "bpa": 126625,
+      "edivTC": 0.1,
+      "nedivTC": 0.03
+    },
+    "MB": {
+      "name": "Manitoba",
+      "brackets": [
+        {
+          "min": 0,
+          "max": 31465,
+          "r": 0.10800000000000001
+        },
+        {
+          "min": 31466,
+          "max": 68005,
+          "r": 0.1275
+        },
+        {
+          "min": 68006,
+          "max": null,
+          "r": 0.174
+        }
+      ],
+      "bpa": 31465,
+      "edivTC": 0.1,
+      "nedivTC": 0.03
+    },
+    "SK": {
+      "name": "Saskatchewan",
+      "brackets": [
+        {
+          "min": 0,
+          "max": 45225,
+          "r": 0.1075
+        },
+        {
+          "min": 45226,
+          "max": 129214,
+          "r": 0.1275
+        },
+        {
+          "min": 129215,
+          "max": null,
+          "r": 0.1475
+        }
+      ],
+      "bpa": 45225,
+      "edivTC": 0.1,
+      "nedivTC": 0.03
+    },
+    "NS": {
+      "name": "Nova Scotia",
+      "brackets": [
+        {
+          "min": 0,
+          "max": 29590,
+          "r": 0.08789999999999999
+        },
+        {
+          "min": 29591,
+          "max": 59180,
+          "r": 0.1495
+        },
+        {
+          "min": 59181,
+          "max": 93000,
+          "r": 0.16670000000000001
+        },
+        {
+          "min": 93001,
+          "max": 150000,
+          "r": 0.175
+        },
+        {
+          "min": 150001,
+          "max": null,
+          "r": 0.21
+        }
+      ],
+      "bpa": 29590,
+      "edivTC": 0.1,
+      "nedivTC": 0.03
+    },
+    "NB": {
+      "name": "New Brunswick",
+      "brackets": [
+        {
+          "min": 0,
+          "max": 41059,
+          "r": 0.0968
+        },
+        {
+          "min": 41060,
+          "max": 82119,
+          "r": 0.1482
+        },
+        {
+          "min": 82120,
+          "max": 133507,
+          "r": 0.16519999999999999
+        },
+        {
+          "min": 133508,
+          "max": 152100,
+          "r": 0.1784
+        },
+        {
+          "min": 152101,
+          "max": null,
+          "r": 0.203
+        }
+      ],
+      "bpa": 41059,
+      "edivTC": 0.1,
+      "nedivTC": 0.03
+    },
+    "NL": {
+      "name": "Newfoundland and Labrador",
+      "brackets": [
+        {
+          "min": 0,
+          "max": 35851,
+          "r": 0.087
+        },
+        {
+          "min": 35852,
+          "max": 71701,
+          "r": 0.145
+        },
+        {
+          "min": 71702,
+          "max": 128010,
+          "r": 0.158
+        },
+        {
+          "min": 128011,
+          "max": 178644,
+          "r": 0.17300000000000001
+        },
+        {
+          "min": 178645,
+          "max": null,
+          "r": 0.183
+        }
+      ],
+      "bpa": 35851,
+      "edivTC": 0.1,
+      "nedivTC": 0.03
+    },
+    "PE": {
+      "name": "Prince Edward Island",
+      "brackets": [
+        {
+          "min": 0,
+          "max": 32786,
+          "r": 0.098
+        },
+        {
+          "min": 32787,
+          "max": 65572,
+          "r": 0.138
+        },
+        {
+          "min": 65573,
+          "max": null,
+          "r": 0.16699999999999998
+        }
+      ],
+      "bpa": 32786,
+      "edivTC": 0.1,
+      "nedivTC": 0.03
+    },
+    "YT": {
+      "name": "Yukon",
+      "brackets": [
+        {
+          "min": 0,
+          "max": 45916,
+          "r": 0.064
+        },
+        {
+          "min": 45917,
+          "max": 91831,
+          "r": 0.09
+        },
+        {
+          "min": 91832,
+          "max": 142353,
+          "r": 0.109
+        },
+        {
+          "min": 142354,
+          "max": 500000,
+          "r": 0.128
+        },
+        {
+          "min": 500001,
+          "max": null,
+          "r": 0.15
+        }
+      ],
+      "bpa": 45916,
+      "edivTC": 0.1,
+      "nedivTC": 0.03
+    },
+    "NT": {
+      "name": "Northwest Territories",
+      "brackets": [
+        {
+          "min": 0,
+          "max": 42009,
+          "r": 0.059000000000000004
+        },
+        {
+          "min": 42010,
+          "max": 84020,
+          "r": 0.086
+        },
+        {
+          "min": 84021,
+          "max": 136270,
+          "r": 0.122
+        },
+        {
+          "min": 136271,
+          "max": null,
+          "r": 0.1405
+        }
+      ],
+      "bpa": 42009,
+      "edivTC": 0.1,
+      "nedivTC": 0.03
+    },
+    "NU": {
+      "name": "Nunavut",
+      "brackets": [
+        {
+          "min": 0,
+          "max": 44022,
+          "r": 0.04
+        },
+        {
+          "min": 44023,
+          "max": 88044,
+          "r": 0.07
+        },
+        {
+          "min": 88045,
+          "max": 142353,
+          "r": 0.09
+        },
+        {
+          "min": 142354,
+          "max": null,
+          "r": 0.115
+        }
+      ],
+      "bpa": 44022,
+      "edivTC": 0.1,
+      "nedivTC": 0.03
+    },
+    "QC": {
+      "name": "Quebec",
+      "brackets": [],
+      "bpa": 0,
+      "edivTC": 0.1,
+      "nedivTC": 0.03
+    }
+  }
+}
