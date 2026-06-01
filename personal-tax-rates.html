@@ -116,6 +116,14 @@
   <div class="province-panel" id="panel-NU"><h3>Nunavut</h3><table class="tax-table"><thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead><tbody><tr><td>$0 &ndash; $52,477</td><td class="rate-cell">4.00%</td></tr><tr><td>$52,478 &ndash; $104,953</td><td class="rate-cell">7.00%</td></tr><tr><td>$104,954 &ndash; $170,565</td><td class="rate-cell">9.00%</td></tr><tr><td>$170,566 and over</td><td class="rate-cell">11.50%</td></tr></tbody></table><p class="text-muted text-sm">BPA: $19,122.</p></div>
   <div class="province-panel" id="panel-YT"><h3>Yukon</h3><table class="tax-table"><thead><tr><th>Taxable Income</th><th>Rate</th></tr></thead><tbody><tr><td>$0 &ndash; $57,375</td><td class="rate-cell">6.40%</td></tr><tr><td>$57,376 &ndash; $114,750</td><td class="rate-cell">9.00%</td></tr><tr><td>$114,751 &ndash; $182,685</td><td class="rate-cell">10.90%</td></tr><tr><td>$182,686 &ndash; $513,500</td><td class="rate-cell">12.80%</td></tr><tr><td>$513,501 and over</td><td class="rate-cell">15.00%</td></tr></tbody></table><p class="text-muted text-sm">BPA: $17,152.</p></div>
   <hr>
+
+  <h2 id="combined-heading">Combined Federal + Ontario Rates</h2>
+  <table class="tax-table" id="combined-table">
+    <thead><tr><th>Taxable Income</th><th>Combined Rate</th><th>Federal</th><th>Provincial</th></tr></thead>
+    <tbody id="combined-body"></tbody>
+  </table>
+
+  <hr>
   <p class="text-muted text-sm">Use the <a href="estimator.html">tax estimator</a> for a personalized calculation. This is not tax advice.</p>
 </section>
 </main>
@@ -131,7 +139,72 @@
   </div>
 </footer>
 <script>
-(function(){var t=document.getElementById("province-tabs");t.addEventListener("click",function(e){var b=e.target.closest(".rates-tab");if(!b)return;t.querySelectorAll(".rates-tab").forEach(function(x){x.classList.remove("rates-tab--active")});b.classList.add("rates-tab--active");document.querySelectorAll(".province-panel").forEach(function(p){p.classList.remove("province-panel--active")});var pan=document.getElementById("panel-"+b.dataset.province);if(pan)pan.classList.add("province-panel--active")})})();
+(function(){
+  /* Federal brackets [min, max, rate%] */
+  var fed = [[0,58523,14],[58524,117045,20.5],[117046,181440,26],[181441,258482,29],[258483,Infinity,33]];
+
+  /* Provincial brackets by code */
+  var prov = {
+    ON: {name:"Ontario", b:[[0,53891,5.05],[53892,107783,9.15],[107784,150000,11.16],[150001,220000,12.16],[220001,Infinity,13.16]]},
+    BC: {name:"British Columbia", b:[[0,49231,5.06],[49232,98464,7.7],[98465,113048,10.5],[113049,137273,12.29],[137274,186125,14.7],[186126,259576,16.8],[259577,Infinity,20.5]]},
+    AB: {name:"Alberta", b:[[0,155317,8],[155318,186381,10],[186382,248507,12],[248508,372761,13],[372762,500000,14],[500001,Infinity,15]]},
+    QC: {name:"Quebec", b:[[0,53178,14],[53179,106341,19],[106342,129402,24],[129403,Infinity,25.75]]},
+    MB: {name:"Manitoba", b:[[0,37837,10.8],[37838,81775,12.75],[81776,Infinity,17.4]]},
+    SK: {name:"Saskatchewan", b:[[0,50617,10.5],[50618,144931,12.5],[144932,Infinity,14.5]]},
+    NS: {name:"Nova Scotia", b:[[0,30389,8.79],[30390,60778,14.95],[60779,95511,16.67],[95512,154050,17.5],[154051,Infinity,21]]},
+    NB: {name:"New Brunswick", b:[[0,51159,9.4],[51160,102322,14],[102323,190061,16],[190062,Infinity,19.5]]},
+    NL: {name:"Newfoundland and Labrador", b:[[0,44496,8.7],[44497,88995,14.5],[88996,159098,15.8],[159099,221773,17.3],[221774,283442,18.3],[283443,566895,20.8],[566896,1133785,21.3],[1133786,Infinity,21.8]]},
+    PE: {name:"Prince Edward Island", b:[[0,32848,9.5],[32849,65696,13.47],[65697,85000,16.6],[85001,100000,17.62],[100001,Infinity,19]]},
+    NT: {name:"Northwest Territories", b:[[0,50730,5.9],[50731,101462,8.6],[101463,156741,12.2],[156742,Infinity,14.05]]},
+    NU: {name:"Nunavut", b:[[0,52477,4],[52478,104953,7],[104954,170565,9],[170566,Infinity,11.5]]},
+    YT: {name:"Yukon", b:[[0,57375,6.4],[57376,114750,9],[114751,182685,10.9],[182686,513500,12.8],[513501,Infinity,15]]}
+  };
+
+  function computeCombined(provCode) {
+    var pb = prov[provCode].b;
+    /* Collect all breakpoints from fed + provincial */
+    var points = [];
+    fed.forEach(function(b){ points.push(b[0]); if(b[1]!==Infinity) points.push(b[1]+1); });
+    pb.forEach(function(b){ points.push(b[0]); if(b[1]!==Infinity) points.push(b[1]+1); });
+    points.sort(function(a,b){return a-b;});
+    points = points.filter(function(v,i,a){return a.indexOf(v)===i;}); /* unique */
+
+    /* Find the fed and prov rate at each breakpoint, build combined brackets */
+    function findRate(brackets, income) {
+      for(var i=0;i<brackets.length;i++){if(income<=brackets[i][1]||brackets[i][1]===Infinity)return brackets[i][2];}
+      return brackets[brackets.length-1][2];
+    }
+
+    var rows='';
+    for(var i=0;i<points.length-1;i++){
+      var lo=points[i], hi=points[i+1]-1, mid=Math.floor((lo+hi)/2);
+      var fr=findRate(fed,mid), pr=findRate(pb,mid);
+      var hiStr=hi>=999999999?'and over':('$'+hi.toLocaleString());
+      rows+='<tr><td>$'+lo.toLocaleString()+' &ndash; '+hiStr+'</td><td class="rate-cell">'+(fr+pr).toFixed(2)+'%</td><td class="rate-cell text-muted">'+fr.toFixed(2)+'%</td><td class="rate-cell text-muted">'+pr.toFixed(2)+'%</td></tr>';
+    }
+    return rows;
+  }
+
+  function updateCombined(code) {
+    document.getElementById("combined-heading").textContent="Combined Federal + "+prov[code].name+" Rates";
+    document.getElementById("combined-body").innerHTML=computeCombined(code);
+  }
+
+  /* Hook into existing province tab clicks */
+  var tabs=document.getElementById("province-tabs");
+  tabs.addEventListener("click",function(e){
+    var btn=e.target.closest(".rates-tab"); if(!btn)return;
+    tabs.querySelectorAll(".rates-tab").forEach(function(t){t.classList.remove("rates-tab--active");});
+    btn.classList.add("rates-tab--active");
+    document.querySelectorAll(".province-panel").forEach(function(p){p.classList.remove("province-panel--active");});
+    var pan=document.getElementById("panel-"+btn.dataset.province);
+    if(pan)pan.classList.add("province-panel--active");
+    updateCombined(btn.dataset.province);
+  });
+
+  /* Initial render */
+  updateCombined("ON");
+})();
 </script>
 </body>
 </html>
