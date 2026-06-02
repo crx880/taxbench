@@ -1,32 +1,25 @@
 <!DOCTYPE html>
 <html lang="en-CA" data-theme="light">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>2016 Corporate Tax Rates &mdash; TaxBench.ca</title>
   <meta name="description" content="2016 federal and provincial corporate income tax rates for Canada.">
-  <meta property="og:title" content="2016 Corporate Tax Rates in Canada">
-  <meta property="og:description" content="Federal and provincial corporate income tax rates for 2016.">
-  <meta property="og:type" content="website">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script defer src="assets/js/main.js"></script>
+  <meta property="og:title" content="2016 Corporate Tax Rates"><meta property="og:type" content="website">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/style.css"><script defer src="assets/js/main.js"></script>
 </head>
 <body>
-<nav class="site-nav" aria-label="Main navigation">
-  <div class="container">
-    <a href="index.html" class="site-nav__brand"><img src="../assets/images/logo.png" alt="TaxBench.ca" height="64" style="height:64px;width:auto"></a>
-    <button class="mobile-nav-toggle" aria-label="Toggle navigation"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
-    <ul class="site-nav__links">
-      <li><a href="articles.html">Articles</a></li>
-      <li><a href="tax-tips.html">Tax&nbsp;Tips</a></li>
-      <li class="nav-dropdown"><a href="personal-tax-rates.html" class="nav-dropdown__toggle">Rates</a><ul class="nav-dropdown__menu"><li><a href="personal-tax-rates.html">Personal</a></li><li><a href="corporate-tax-rates.html">Corporate</a></li></ul></li>
-      <li class="nav-dropdown"><a href="estimator.html" class="nav-dropdown__toggle">Estimator</a><ul class="nav-dropdown__menu"><li><a href="estimator.html">Personal</a></li><li><a href="corporate-estimator.html">Corporate</a></li></ul></li>
-      <li><a href="about.html">About</a></li>
-      <li><button class="theme-toggle" aria-label="Toggle dark mode">Dark</button></li>
-    </ul>
-  </div>
-</nav>
+<nav class="site-nav"><div class="container">
+  <a href="index.html" class="site-nav__brand"><img src="../assets/images/logo.png" alt="TaxBench.ca" height="64" style="height:64px;width:auto"></a>
+  <button class="mobile-nav-toggle" aria-label="Toggle navigation"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+  <ul class="site-nav__links">
+    <li><a href="articles.html">Articles</a></li><li><a href="tax-tips.html">Tax&nbsp;Tips</a></li>
+    <li class="nav-dropdown"><a href="personal-tax-rates.html" class="nav-dropdown__toggle">Rates</a><ul class="nav-dropdown__menu"><li><a href="personal-tax-rates.html">Personal</a></li><li><a href="corporate-tax-rates.html">Corporate</a></li></ul></li>
+    <li class="nav-dropdown"><a href="estimator.html" class="nav-dropdown__toggle">Estimator</a><ul class="nav-dropdown__menu"><li><a href="estimator.html">Personal</a></li><li><a href="corporate-estimator.html">Corporate</a></li></ul></li>
+    <li><a href="about.html">About</a></li>
+    <li><button class="theme-toggle" aria-label="Toggle dark mode">Dark</button></li>
+  </ul>
+</div></nav>
 <main>
 <header class="page-header container container-narrow">
   <p class="page-header__kicker">2016 Tax Year</p>
@@ -37,7 +30,7 @@
       <select id="year-select" class="estimator__select" style="max-width:120px;width:auto" onchange="if(this.value)window.location=this.value">
         <option value="">2016</option>
         <option value="tax-rates-corp-2015.html">2015</option>
-        <option value="tax-rates-corp-2016.html"></option>
+        <option value="tax-rates-corp-2016.html" selected>2016</option>
         <option value="tax-rates-corp-2017.html">2017</option>
         <option value="tax-rates-corp-2018.html">2018</option>
         <option value="tax-rates-corp-2019.html">2019</option>
@@ -53,62 +46,40 @@
   </div>
   <p class="page-header__subtitle">Federal and provincial corporate income tax rates for the 2016 tax year.</p>
 </header>
-
 <section class="container" style="padding-top:0">
   <h2>Federal Corporate Rates</h2>
-  <table class="tax-table">
-    <thead><tr><th>Income Type</th><th>Rate</th><th>Threshold</th></tr></thead>
-    <tbody>
-      <tr><td>General active business income</td><td class="rate-cell">15.0%</td><td>No limit</td></tr>
-      <tr><td>Small business deduction</td><td class="rate-cell">10.5%</td><td>First $500,000</td></tr>
-    </tbody>
-  </table>
+  <table class="tax-table"><thead><tr><th>Income Type</th><th>Rate</th><th>Threshold</th></tr></thead><tbody>
+    <tr><td>General active business income</td><td class="rate-cell">15.00%</td><td>No limit</td></tr>
+    <tr><td>Small business deduction</td><td class="rate-cell">10.50%</td><td>First $500,000</td></tr>
+  </tbody></table>
 
   <hr>
-  <h2>Combined Federal + Provincial Rates</h2>
-  <table class="tax-table">
-    <thead><tr><th>Province / Territory</th><th>General Rate</th><th>Small Business Rate</th><th>Small Business Limit</th></tr></thead>
-    <tbody>
-            <tr><td>ON</td><td class="rate-cell">11.5%</td><td class="rate-cell">4.5%</td><td>$500,000</td></tr>
-      <tr><td>BC</td><td class="rate-cell">10.0%</td><td class="rate-cell">2.5%</td><td>$500,000</td></tr>
-      <tr><td>AB</td><td class="rate-cell">0.0%</td><td class="rate-cell">0.0%</td><td>$500,000</td></tr>
-      <tr><td>QC</td><td class="rate-cell">0.0%</td><td class="rate-cell">0.0%</td><td>$500,000</td></tr>
-      <tr><td>MB</td><td class="rate-cell">0.0%</td><td class="rate-cell">0.0%</td><td>$500,000</td></tr>
-      <tr><td>SK</td><td class="rate-cell">0.0%</td><td class="rate-cell">0.0%</td><td>$500,000</td></tr>
-      <tr><td>NS</td><td class="rate-cell">0.0%</td><td class="rate-cell">0.0%</td><td>$500,000</td></tr>
-      <tr><td>NB</td><td class="rate-cell">0.0%</td><td class="rate-cell">0.0%</td><td>$500,000</td></tr>
-      <tr><td>NL</td><td class="rate-cell">0.0%</td><td class="rate-cell">0.0%</td><td>$500,000</td></tr>
-      <tr><td>PE</td><td class="rate-cell">0.0%</td><td class="rate-cell">0.0%</td><td>$500,000</td></tr>
-      <tr><td>NT</td><td class="rate-cell">0.0%</td><td class="rate-cell">0.0%</td><td>$500,000</td></tr>
-      <tr><td>NU</td><td class="rate-cell">0.0%</td><td class="rate-cell">0.0%</td><td>$500,000</td></tr>
-      <tr><td>YT</td><td class="rate-cell">0.0%</td><td class="rate-cell">0.0%</td><td>$500,000</td></tr>
 
-    </tbody>
-  </table>
-
-  <hr>
-  <h3>Refundable Taxes on Investment Income</h3>
-  <table class="tax-table">
-    <thead><tr><th>Tax Type</th><th>Rate</th><th>Description</th></tr></thead>
-    <tbody>
-      <tr><td>Aggregate Investment Income (AII)</td><td class="rate-cell">38.67%</td><td>Federal rate on passive income (30.67% refundable as NERDTOH)</td></tr>
-      <tr><td>Part IV Tax (eligible dividends)</td><td class="rate-cell">38.33%</td><td>Refundable tax on eligible dividends received (ERDTOH)</td></tr>
-      <tr><td>Capital gains inclusion</td><td class="rate-cell">50%</td><td>Non-taxable 50% goes to Capital Dividend Account</td></tr>
-    </tbody>
-  </table>
-
-  <p class="text-muted text-sm">Use the <a href="corporate-estimator.html">corporate tax estimator</a> for RDTOH and dividend recovery calculations. This is not tax advice.</p>
+  <h2>Combined Federal + Provincial Rates by Province</h2>
+  <table class="tax-table"><thead><tr><th>Province / Territory</th><th>General Rate</th><th>Small Business Rate</th><th>Small Business Limit</th></tr></thead><tbody>
+      <tr><td>Ontario</td><td class="rate-cell">26.5%</td><td class="rate-cell">15.0%</td><td>$500,000</td></tr>
+      <tr><td>British Columbia</td><td class="rate-cell">25.5%</td><td class="rate-cell">13.0%</td><td>$500,000</td></tr>
+      <tr><td>Alberta</td><td class="rate-cell">27.5%</td><td class="rate-cell">13.5%</td><td>$500,000</td></tr>
+      <tr><td>Quebec</td><td class="rate-cell">27.5%</td><td class="rate-cell">18.5%</td><td>$500,000</td></tr>
+      <tr><td>Manitoba</td><td class="rate-cell">27.0%</td><td class="rate-cell">10.5%</td><td>$500,000</td></tr>
+      <tr><td>Saskatchewan</td><td class="rate-cell">27.0%</td><td class="rate-cell">12.5%</td><td>$500,000</td></tr>
+      <tr><td>Nova Scotia</td><td class="rate-cell">31.0%</td><td class="rate-cell">13.5%</td><td>$350,000</td></tr>
+      <tr><td>New Brunswick</td><td class="rate-cell">29.0%</td><td class="rate-cell">14.5%</td><td>$500,000</td></tr>
+      <tr><td>Newfoundland and Labrador</td><td class="rate-cell">29.0%</td><td class="rate-cell">13.5%</td><td>$500,000</td></tr>
+      <tr><td>Prince Edward Island</td><td class="rate-cell">31.0%</td><td class="rate-cell">14.5%</td><td>$500,000</td></tr>
+      <tr><td>Northwest Territories</td><td class="rate-cell">28.0%</td><td class="rate-cell">14.5%</td><td>$500,000</td></tr>
+      <tr><td>Nunavut</td><td class="rate-cell">27.0%</td><td class="rate-cell">14.5%</td><td>$500,000</td></tr>
+      <tr><td>Yukon</td><td class="rate-cell">27.0%</td><td class="rate-cell">13.5%</td><td>$500,000</td></tr>
+  </tbody></table>
+  <p class="text-muted text-sm">Use the <a href="corporate-estimator.html">corporate estimator</a> for RDTOH and dividend recovery calculations. This is not tax advice.</p>
 </section>
 </main>
-<footer class="site-footer">
-  <div class="container">
-    <div class="site-footer__grid">
-      <div><div class="site-footer__brand">TaxBench.ca</div><p class="site-footer__desc">Editorial tax resources for Canadians. Not affiliated with the CRA.</p></div>
-      <div><h4>Resources</h4><ul><li><a href="articles.html">Articles</a></li><li><a href="tax-tips.html">Tax Tips</a></li><li><a href="personal-tax-rates.html">Personal Rates</a></li><li><a href="corporate-tax-rates.html">Corporate Rates</a></li><li><a href="estimator.html">Tax Estimator</a></li></ul></div>
-      <div><h4>Site</h4><ul><li><a href="about.html">About</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
-    </div>
-    <div class="site-footer__bottom"><span>&copy; 2026 TaxBench.ca.</span><span>For educational purposes only. Not tax advice.</span></div>
+<footer class="site-footer"><div class="container">
+  <div class="site-footer__grid">
+    <div><div class="site-footer__brand">TaxBench.ca</div><p class="site-footer__desc">Editorial tax resources for Canadians. Not affiliated with the CRA.</p></div>
+    <div><h4>Resources</h4><ul><li><a href="articles.html">Articles</a></li><li><a href="tax-tips.html">Tax Tips</a></li><li><a href="personal-tax-rates.html">Personal Rates</a></li><li><a href="corporate-tax-rates.html">Corporate Rates</a></li><li><a href="estimator.html">Tax Estimator</a></li></ul></div>
+    <div><h4>Site</h4><ul><li><a href="about.html">About</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
   </div>
-</footer>
-</body>
-</html>
+  <div class="site-footer__bottom"><span>&copy; 2016 TaxBench.ca.</span><span>For educational purposes only. Not tax advice.</span></div>
+</div></footer>
+</body></html>

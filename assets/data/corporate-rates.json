@@ -8,7 +8,7 @@
     },
     "provinces": {
       "ON": {
-        "name": "ON",
+        "name": "Ontario",
         "generalRate": 0.115,
         "smallBusinessRate": 0.045,
         "smallBusinessLimit": 500000,
@@ -16,11 +16,11 @@
         "combinedSmallBusiness": 0.155
       },
       "BC": {
-        "name": "BC",
-        "generalRate": 0.1,
+        "name": "British Columbia",
+        "generalRate": 0.105,
         "smallBusinessRate": 0.025,
         "smallBusinessLimit": 500000,
-        "combinedGeneral": 0.25,
+        "combinedGeneral": 0.255,
         "combinedSmallBusiness": 0.135
       }
     }
@@ -34,7 +34,7 @@
     },
     "provinces": {
       "ON": {
-        "name": "ON",
+        "name": "Ontario",
         "generalRate": 0.115,
         "smallBusinessRate": 0.045,
         "smallBusinessLimit": 500000,
@@ -42,12 +42,100 @@
         "combinedSmallBusiness": 0.15
       },
       "BC": {
-        "name": "BC",
-        "generalRate": 0.1,
+        "name": "British Columbia",
+        "generalRate": 0.105,
         "smallBusinessRate": 0.025,
         "smallBusinessLimit": 500000,
-        "combinedGeneral": 0.25,
+        "combinedGeneral": 0.255,
         "combinedSmallBusiness": 0.13
+      },
+      "AB": {
+        "name": "Alberta",
+        "generalRate": 0.125,
+        "smallBusinessRate": 0.03,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.275,
+        "combinedSmallBusiness": 0.135
+      },
+      "QC": {
+        "name": "Quebec",
+        "generalRate": 0.125,
+        "smallBusinessRate": 0.08,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.275,
+        "combinedSmallBusiness": 0.185
+      },
+      "MB": {
+        "name": "Manitoba",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.105
+      },
+      "SK": {
+        "name": "Saskatchewan",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.125
+      },
+      "NS": {
+        "name": "Nova Scotia",
+        "generalRate": 0.16,
+        "smallBusinessRate": 0.03,
+        "smallBusinessLimit": 350000,
+        "combinedGeneral": 0.31,
+        "combinedSmallBusiness": 0.135
+      },
+      "NB": {
+        "name": "New Brunswick",
+        "generalRate": 0.14,
+        "smallBusinessRate": 0.04,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.29000000000000004,
+        "combinedSmallBusiness": 0.145
+      },
+      "NL": {
+        "name": "Newfoundland and Labrador",
+        "generalRate": 0.14,
+        "smallBusinessRate": 0.03,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.29000000000000004,
+        "combinedSmallBusiness": 0.135
+      },
+      "PE": {
+        "name": "Prince Edward Island",
+        "generalRate": 0.16,
+        "smallBusinessRate": 0.04,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.31,
+        "combinedSmallBusiness": 0.145
+      },
+      "YT": {
+        "name": "Yukon",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.03,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.135
+      },
+      "NT": {
+        "name": "Northwest Territories",
+        "generalRate": 0.13,
+        "smallBusinessRate": 0.04,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.28,
+        "combinedSmallBusiness": 0.145
+      },
+      "NU": {
+        "name": "Nunavut",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.04,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.145
       }
     }
   },
@@ -60,7 +148,7 @@
     },
     "provinces": {
       "ON": {
-        "name": "ON",
+        "name": "Ontario",
         "generalRate": 0.115,
         "smallBusinessRate": 0.045,
         "smallBusinessLimit": 500000,
@@ -68,12 +156,100 @@
         "combinedSmallBusiness": 0.15
       },
       "BC": {
-        "name": "BC",
-        "generalRate": 0.11,
+        "name": "British Columbia",
+        "generalRate": 0.12,
         "smallBusinessRate": 0.02,
         "smallBusinessLimit": 500000,
-        "combinedGeneral": 0.26,
+        "combinedGeneral": 0.27,
         "combinedSmallBusiness": 0.125
+      },
+      "AB": {
+        "name": "Alberta",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.03,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.135
+      },
+      "QC": {
+        "name": "Quebec",
+        "generalRate": 0.125,
+        "smallBusinessRate": 0.08,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.275,
+        "combinedSmallBusiness": 0.185
+      },
+      "MB": {
+        "name": "Manitoba",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.105
+      },
+      "SK": {
+        "name": "Saskatchewan",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.125
+      },
+      "NS": {
+        "name": "Nova Scotia",
+        "generalRate": 0.16,
+        "smallBusinessRate": 0.03,
+        "smallBusinessLimit": 350000,
+        "combinedGeneral": 0.31,
+        "combinedSmallBusiness": 0.135
+      },
+      "NB": {
+        "name": "New Brunswick",
+        "generalRate": 0.14,
+        "smallBusinessRate": 0.03,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.29000000000000004,
+        "combinedSmallBusiness": 0.135
+      },
+      "NL": {
+        "name": "Newfoundland and Labrador",
+        "generalRate": 0.15,
+        "smallBusinessRate": 0.03,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.3,
+        "combinedSmallBusiness": 0.135
+      },
+      "PE": {
+        "name": "Prince Edward Island",
+        "generalRate": 0.16,
+        "smallBusinessRate": 0.04,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.31,
+        "combinedSmallBusiness": 0.145
+      },
+      "YT": {
+        "name": "Yukon",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.125
+      },
+      "NT": {
+        "name": "Northwest Territories",
+        "generalRate": 0.11,
+        "smallBusinessRate": 0.04,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.26,
+        "combinedSmallBusiness": 0.145
+      },
+      "NU": {
+        "name": "Nunavut",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.04,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.145
       }
     }
   },
@@ -86,7 +262,7 @@
     },
     "provinces": {
       "ON": {
-        "name": "ON",
+        "name": "Ontario",
         "generalRate": 0.115,
         "smallBusinessRate": 0.035,
         "smallBusinessLimit": 500000,
@@ -94,12 +270,100 @@
         "combinedSmallBusiness": 0.135
       },
       "BC": {
-        "name": "BC",
+        "name": "British Columbia",
         "generalRate": 0.12,
         "smallBusinessRate": 0.02,
         "smallBusinessLimit": 500000,
         "combinedGeneral": 0.27,
         "combinedSmallBusiness": 0.12000000000000001
+      },
+      "AB": {
+        "name": "Alberta",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.12000000000000001
+      },
+      "QC": {
+        "name": "Quebec",
+        "generalRate": 0.123,
+        "smallBusinessRate": 0.075,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.273,
+        "combinedSmallBusiness": 0.175
+      },
+      "MB": {
+        "name": "Manitoba",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.1
+      },
+      "SK": {
+        "name": "Saskatchewan",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 600000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.12000000000000001
+      },
+      "NS": {
+        "name": "Nova Scotia",
+        "generalRate": 0.16,
+        "smallBusinessRate": 0.03,
+        "smallBusinessLimit": 350000,
+        "combinedGeneral": 0.31,
+        "combinedSmallBusiness": 0.13
+      },
+      "NB": {
+        "name": "New Brunswick",
+        "generalRate": 0.14,
+        "smallBusinessRate": 0.025,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.29000000000000004,
+        "combinedSmallBusiness": 0.125
+      },
+      "NL": {
+        "name": "Newfoundland and Labrador",
+        "generalRate": 0.15,
+        "smallBusinessRate": 0.03,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.3,
+        "combinedSmallBusiness": 0.13
+      },
+      "PE": {
+        "name": "Prince Edward Island",
+        "generalRate": 0.16,
+        "smallBusinessRate": 0.04,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.31,
+        "combinedSmallBusiness": 0.14
+      },
+      "YT": {
+        "name": "Yukon",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.12000000000000001
+      },
+      "NT": {
+        "name": "Northwest Territories",
+        "generalRate": 0.115,
+        "smallBusinessRate": 0.04,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.265,
+        "combinedSmallBusiness": 0.14
+      },
+      "NU": {
+        "name": "Nunavut",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.04,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.14
       }
     }
   },
@@ -112,7 +376,7 @@
     },
     "provinces": {
       "ON": {
-        "name": "ON",
+        "name": "Ontario",
         "generalRate": 0.115,
         "smallBusinessRate": 0.032,
         "smallBusinessLimit": 500000,
@@ -120,12 +384,100 @@
         "combinedSmallBusiness": 0.122
       },
       "BC": {
-        "name": "BC",
+        "name": "British Columbia",
         "generalRate": 0.12,
         "smallBusinessRate": 0.02,
         "smallBusinessLimit": 500000,
         "combinedGeneral": 0.27,
         "combinedSmallBusiness": 0.11
+      },
+      "AB": {
+        "name": "Alberta",
+        "generalRate": 0.11,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.26,
+        "combinedSmallBusiness": 0.11
+      },
+      "QC": {
+        "name": "Quebec",
+        "generalRate": 0.122,
+        "smallBusinessRate": 0.06,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.272,
+        "combinedSmallBusiness": 0.15
+      },
+      "MB": {
+        "name": "Manitoba",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.09
+      },
+      "SK": {
+        "name": "Saskatchewan",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 600000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.11
+      },
+      "NS": {
+        "name": "Nova Scotia",
+        "generalRate": 0.16,
+        "smallBusinessRate": 0.03,
+        "smallBusinessLimit": 350000,
+        "combinedGeneral": 0.31,
+        "combinedSmallBusiness": 0.12
+      },
+      "NB": {
+        "name": "New Brunswick",
+        "generalRate": 0.14,
+        "smallBusinessRate": 0.025,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.29000000000000004,
+        "combinedSmallBusiness": 0.11499999999999999
+      },
+      "NL": {
+        "name": "Newfoundland and Labrador",
+        "generalRate": 0.15,
+        "smallBusinessRate": 0.03,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.3,
+        "combinedSmallBusiness": 0.12
+      },
+      "PE": {
+        "name": "Prince Edward Island",
+        "generalRate": 0.16,
+        "smallBusinessRate": 0.035,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.31,
+        "combinedSmallBusiness": 0.125
+      },
+      "YT": {
+        "name": "Yukon",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.11
+      },
+      "NT": {
+        "name": "Northwest Territories",
+        "generalRate": 0.115,
+        "smallBusinessRate": 0.04,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.265,
+        "combinedSmallBusiness": 0.13
+      },
+      "NU": {
+        "name": "Nunavut",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.04,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.13
       }
     }
   },
@@ -138,7 +490,7 @@
     },
     "provinces": {
       "ON": {
-        "name": "ON",
+        "name": "Ontario",
         "generalRate": 0.115,
         "smallBusinessRate": 0.032,
         "smallBusinessLimit": 500000,
@@ -146,12 +498,100 @@
         "combinedSmallBusiness": 0.122
       },
       "BC": {
-        "name": "BC",
+        "name": "British Columbia",
         "generalRate": 0.12,
         "smallBusinessRate": 0.02,
         "smallBusinessLimit": 500000,
         "combinedGeneral": 0.27,
         "combinedSmallBusiness": 0.11
+      },
+      "AB": {
+        "name": "Alberta",
+        "generalRate": 0.1,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.25,
+        "combinedSmallBusiness": 0.11
+      },
+      "QC": {
+        "name": "Quebec",
+        "generalRate": 0.121,
+        "smallBusinessRate": 0.06,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.271,
+        "combinedSmallBusiness": 0.15
+      },
+      "MB": {
+        "name": "Manitoba",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.09
+      },
+      "SK": {
+        "name": "Saskatchewan",
+        "generalRate": 0.11,
+        "smallBusinessRate": 0.01,
+        "smallBusinessLimit": 600000,
+        "combinedGeneral": 0.26,
+        "combinedSmallBusiness": 0.09999999999999999
+      },
+      "NS": {
+        "name": "Nova Scotia",
+        "generalRate": 0.16,
+        "smallBusinessRate": 0.03,
+        "smallBusinessLimit": 350000,
+        "combinedGeneral": 0.31,
+        "combinedSmallBusiness": 0.12
+      },
+      "NB": {
+        "name": "New Brunswick",
+        "generalRate": 0.14,
+        "smallBusinessRate": 0.025,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.29000000000000004,
+        "combinedSmallBusiness": 0.11499999999999999
+      },
+      "NL": {
+        "name": "Newfoundland and Labrador",
+        "generalRate": 0.15,
+        "smallBusinessRate": 0.03,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.3,
+        "combinedSmallBusiness": 0.12
+      },
+      "PE": {
+        "name": "Prince Edward Island",
+        "generalRate": 0.16,
+        "smallBusinessRate": 0.035,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.31,
+        "combinedSmallBusiness": 0.125
+      },
+      "YT": {
+        "name": "Yukon",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.11
+      },
+      "NT": {
+        "name": "Northwest Territories",
+        "generalRate": 0.115,
+        "smallBusinessRate": 0.04,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.265,
+        "combinedSmallBusiness": 0.13
+      },
+      "NU": {
+        "name": "Nunavut",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.04,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.13
       }
     }
   },
@@ -164,7 +604,7 @@
     },
     "provinces": {
       "ON": {
-        "name": "ON",
+        "name": "Ontario",
         "generalRate": 0.115,
         "smallBusinessRate": 0.032,
         "smallBusinessLimit": 500000,
@@ -172,12 +612,100 @@
         "combinedSmallBusiness": 0.122
       },
       "BC": {
-        "name": "BC",
+        "name": "British Columbia",
         "generalRate": 0.12,
         "smallBusinessRate": 0.02,
         "smallBusinessLimit": 500000,
         "combinedGeneral": 0.27,
         "combinedSmallBusiness": 0.11
+      },
+      "AB": {
+        "name": "Alberta",
+        "generalRate": 0.08,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.22999999999999998,
+        "combinedSmallBusiness": 0.11
+      },
+      "QC": {
+        "name": "Quebec",
+        "generalRate": 0.119,
+        "smallBusinessRate": 0.05,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.269,
+        "combinedSmallBusiness": 0.14
+      },
+      "MB": {
+        "name": "Manitoba",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.09
+      },
+      "SK": {
+        "name": "Saskatchewan",
+        "generalRate": 0.11,
+        "smallBusinessRate": 0.01,
+        "smallBusinessLimit": 600000,
+        "combinedGeneral": 0.26,
+        "combinedSmallBusiness": 0.09999999999999999
+      },
+      "NS": {
+        "name": "Nova Scotia",
+        "generalRate": 0.16,
+        "smallBusinessRate": 0.03,
+        "smallBusinessLimit": 350000,
+        "combinedGeneral": 0.31,
+        "combinedSmallBusiness": 0.12
+      },
+      "NB": {
+        "name": "New Brunswick",
+        "generalRate": 0.14,
+        "smallBusinessRate": 0.025,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.29000000000000004,
+        "combinedSmallBusiness": 0.11499999999999999
+      },
+      "NL": {
+        "name": "Newfoundland and Labrador",
+        "generalRate": 0.15,
+        "smallBusinessRate": 0.03,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.3,
+        "combinedSmallBusiness": 0.12
+      },
+      "PE": {
+        "name": "Prince Edward Island",
+        "generalRate": 0.16,
+        "smallBusinessRate": 0.035,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.31,
+        "combinedSmallBusiness": 0.125
+      },
+      "YT": {
+        "name": "Yukon",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.11
+      },
+      "NT": {
+        "name": "Northwest Territories",
+        "generalRate": 0.115,
+        "smallBusinessRate": 0.04,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.265,
+        "combinedSmallBusiness": 0.13
+      },
+      "NU": {
+        "name": "Nunavut",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.04,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.13
       }
     }
   },
@@ -190,7 +718,7 @@
     },
     "provinces": {
       "ON": {
-        "name": "ON",
+        "name": "Ontario",
         "generalRate": 0.115,
         "smallBusinessRate": 0.032,
         "smallBusinessLimit": 500000,
@@ -198,12 +726,100 @@
         "combinedSmallBusiness": 0.122
       },
       "BC": {
-        "name": "BC",
+        "name": "British Columbia",
         "generalRate": 0.12,
         "smallBusinessRate": 0.02,
         "smallBusinessLimit": 500000,
         "combinedGeneral": 0.27,
         "combinedSmallBusiness": 0.11
+      },
+      "AB": {
+        "name": "Alberta",
+        "generalRate": 0.08,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.22999999999999998,
+        "combinedSmallBusiness": 0.11
+      },
+      "QC": {
+        "name": "Quebec",
+        "generalRate": 0.119,
+        "smallBusinessRate": 0.05,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.269,
+        "combinedSmallBusiness": 0.14
+      },
+      "MB": {
+        "name": "Manitoba",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.09
+      },
+      "SK": {
+        "name": "Saskatchewan",
+        "generalRate": 0.11,
+        "smallBusinessRate": 0.01,
+        "smallBusinessLimit": 600000,
+        "combinedGeneral": 0.26,
+        "combinedSmallBusiness": 0.09999999999999999
+      },
+      "NS": {
+        "name": "Nova Scotia",
+        "generalRate": 0.145,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.295,
+        "combinedSmallBusiness": 0.11
+      },
+      "NB": {
+        "name": "New Brunswick",
+        "generalRate": 0.14,
+        "smallBusinessRate": 0.025,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.29000000000000004,
+        "combinedSmallBusiness": 0.11499999999999999
+      },
+      "NL": {
+        "name": "Newfoundland and Labrador",
+        "generalRate": 0.15,
+        "smallBusinessRate": 0.03,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.3,
+        "combinedSmallBusiness": 0.12
+      },
+      "PE": {
+        "name": "Prince Edward Island",
+        "generalRate": 0.16,
+        "smallBusinessRate": 0.035,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.31,
+        "combinedSmallBusiness": 0.125
+      },
+      "YT": {
+        "name": "Yukon",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.11
+      },
+      "NT": {
+        "name": "Northwest Territories",
+        "generalRate": 0.115,
+        "smallBusinessRate": 0.04,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.265,
+        "combinedSmallBusiness": 0.13
+      },
+      "NU": {
+        "name": "Nunavut",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.04,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.13
       }
     }
   },
@@ -216,7 +832,7 @@
     },
     "provinces": {
       "ON": {
-        "name": "ON",
+        "name": "Ontario",
         "generalRate": 0.115,
         "smallBusinessRate": 0.032,
         "smallBusinessLimit": 500000,
@@ -224,12 +840,100 @@
         "combinedSmallBusiness": 0.122
       },
       "BC": {
-        "name": "BC",
+        "name": "British Columbia",
         "generalRate": 0.12,
         "smallBusinessRate": 0.02,
         "smallBusinessLimit": 500000,
         "combinedGeneral": 0.27,
         "combinedSmallBusiness": 0.11
+      },
+      "AB": {
+        "name": "Alberta",
+        "generalRate": 0.08,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.22999999999999998,
+        "combinedSmallBusiness": 0.11
+      },
+      "QC": {
+        "name": "Quebec",
+        "generalRate": 0.119,
+        "smallBusinessRate": 0.05,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.269,
+        "combinedSmallBusiness": 0.14
+      },
+      "MB": {
+        "name": "Manitoba",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.09
+      },
+      "SK": {
+        "name": "Saskatchewan",
+        "generalRate": 0.11,
+        "smallBusinessRate": 0.01,
+        "smallBusinessLimit": 600000,
+        "combinedGeneral": 0.26,
+        "combinedSmallBusiness": 0.09999999999999999
+      },
+      "NS": {
+        "name": "Nova Scotia",
+        "generalRate": 0.145,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.295,
+        "combinedSmallBusiness": 0.11
+      },
+      "NB": {
+        "name": "New Brunswick",
+        "generalRate": 0.14,
+        "smallBusinessRate": 0.025,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.29000000000000004,
+        "combinedSmallBusiness": 0.11499999999999999
+      },
+      "NL": {
+        "name": "Newfoundland and Labrador",
+        "generalRate": 0.15,
+        "smallBusinessRate": 0.03,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.3,
+        "combinedSmallBusiness": 0.12
+      },
+      "PE": {
+        "name": "Prince Edward Island",
+        "generalRate": 0.16,
+        "smallBusinessRate": 0.035,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.31,
+        "combinedSmallBusiness": 0.125
+      },
+      "YT": {
+        "name": "Yukon",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.11
+      },
+      "NT": {
+        "name": "Northwest Territories",
+        "generalRate": 0.115,
+        "smallBusinessRate": 0.04,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.265,
+        "combinedSmallBusiness": 0.13
+      },
+      "NU": {
+        "name": "Nunavut",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.04,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.13
       }
     }
   },
@@ -242,7 +946,7 @@
     },
     "provinces": {
       "ON": {
-        "name": "ON",
+        "name": "Ontario",
         "generalRate": 0.115,
         "smallBusinessRate": 0.032,
         "smallBusinessLimit": 500000,
@@ -250,12 +954,100 @@
         "combinedSmallBusiness": 0.122
       },
       "BC": {
-        "name": "BC",
+        "name": "British Columbia",
         "generalRate": 0.12,
         "smallBusinessRate": 0.02,
         "smallBusinessLimit": 500000,
         "combinedGeneral": 0.27,
         "combinedSmallBusiness": 0.11
+      },
+      "AB": {
+        "name": "Alberta",
+        "generalRate": 0.08,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.22999999999999998,
+        "combinedSmallBusiness": 0.11
+      },
+      "QC": {
+        "name": "Quebec",
+        "generalRate": 0.119,
+        "smallBusinessRate": 0.05,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.269,
+        "combinedSmallBusiness": 0.14
+      },
+      "MB": {
+        "name": "Manitoba",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.09
+      },
+      "SK": {
+        "name": "Saskatchewan",
+        "generalRate": 0.11,
+        "smallBusinessRate": 0.01,
+        "smallBusinessLimit": 600000,
+        "combinedGeneral": 0.26,
+        "combinedSmallBusiness": 0.09999999999999999
+      },
+      "NS": {
+        "name": "Nova Scotia",
+        "generalRate": 0.145,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.295,
+        "combinedSmallBusiness": 0.11
+      },
+      "NB": {
+        "name": "New Brunswick",
+        "generalRate": 0.14,
+        "smallBusinessRate": 0.025,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.29000000000000004,
+        "combinedSmallBusiness": 0.11499999999999999
+      },
+      "NL": {
+        "name": "Newfoundland and Labrador",
+        "generalRate": 0.15,
+        "smallBusinessRate": 0.025,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.3,
+        "combinedSmallBusiness": 0.11499999999999999
+      },
+      "PE": {
+        "name": "Prince Edward Island",
+        "generalRate": 0.16,
+        "smallBusinessRate": 0.01,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.31,
+        "combinedSmallBusiness": 0.09999999999999999
+      },
+      "YT": {
+        "name": "Yukon",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.09
+      },
+      "NT": {
+        "name": "Northwest Territories",
+        "generalRate": 0.115,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.265,
+        "combinedSmallBusiness": 0.11
+      },
+      "NU": {
+        "name": "Nunavut",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.03,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.12
       }
     }
   },
@@ -268,7 +1060,7 @@
     },
     "provinces": {
       "ON": {
-        "name": "ON",
+        "name": "Ontario",
         "generalRate": 0.115,
         "smallBusinessRate": 0.032,
         "smallBusinessLimit": 500000,
@@ -276,12 +1068,100 @@
         "combinedSmallBusiness": 0.122
       },
       "BC": {
-        "name": "BC",
+        "name": "British Columbia",
         "generalRate": 0.12,
         "smallBusinessRate": 0.02,
         "smallBusinessLimit": 500000,
         "combinedGeneral": 0.27,
         "combinedSmallBusiness": 0.11
+      },
+      "AB": {
+        "name": "Alberta",
+        "generalRate": 0.08,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.22999999999999998,
+        "combinedSmallBusiness": 0.11
+      },
+      "QC": {
+        "name": "Quebec",
+        "generalRate": 0.119,
+        "smallBusinessRate": 0.032,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.269,
+        "combinedSmallBusiness": 0.122
+      },
+      "MB": {
+        "name": "Manitoba",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.09
+      },
+      "SK": {
+        "name": "Saskatchewan",
+        "generalRate": 0.11,
+        "smallBusinessRate": 0.01,
+        "smallBusinessLimit": 600000,
+        "combinedGeneral": 0.26,
+        "combinedSmallBusiness": 0.09999999999999999
+      },
+      "NS": {
+        "name": "Nova Scotia",
+        "generalRate": 0.145,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.295,
+        "combinedSmallBusiness": 0.11
+      },
+      "NB": {
+        "name": "New Brunswick",
+        "generalRate": 0.14,
+        "smallBusinessRate": 0.025,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.29000000000000004,
+        "combinedSmallBusiness": 0.11499999999999999
+      },
+      "NL": {
+        "name": "Newfoundland and Labrador",
+        "generalRate": 0.15,
+        "smallBusinessRate": 0.025,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.3,
+        "combinedSmallBusiness": 0.11499999999999999
+      },
+      "PE": {
+        "name": "Prince Edward Island",
+        "generalRate": 0.15,
+        "smallBusinessRate": 0.01,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.3,
+        "combinedSmallBusiness": 0.09999999999999999
+      },
+      "YT": {
+        "name": "Yukon",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.09
+      },
+      "NT": {
+        "name": "Northwest Territories",
+        "generalRate": 0.115,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.265,
+        "combinedSmallBusiness": 0.11
+      },
+      "NU": {
+        "name": "Nunavut",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.03,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.12
       }
     }
   },
@@ -294,7 +1174,7 @@
     },
     "provinces": {
       "ON": {
-        "name": "ON",
+        "name": "Ontario",
         "generalRate": 0.115,
         "smallBusinessRate": 0.032,
         "smallBusinessLimit": 500000,
@@ -302,12 +1182,100 @@
         "combinedSmallBusiness": 0.122
       },
       "BC": {
-        "name": "BC",
+        "name": "British Columbia",
         "generalRate": 0.12,
         "smallBusinessRate": 0.02,
         "smallBusinessLimit": 500000,
         "combinedGeneral": 0.27,
         "combinedSmallBusiness": 0.11
+      },
+      "AB": {
+        "name": "Alberta",
+        "generalRate": 0.08,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.22999999999999998,
+        "combinedSmallBusiness": 0.11
+      },
+      "QC": {
+        "name": "Quebec",
+        "generalRate": 0.115,
+        "smallBusinessRate": 0.032,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.265,
+        "combinedSmallBusiness": 0.122
+      },
+      "MB": {
+        "name": "Manitoba",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.09
+      },
+      "SK": {
+        "name": "Saskatchewan",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.01,
+        "smallBusinessLimit": 600000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.09999999999999999
+      },
+      "NS": {
+        "name": "Nova Scotia",
+        "generalRate": 0.14,
+        "smallBusinessRate": 0.025,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.29000000000000004,
+        "combinedSmallBusiness": 0.11499999999999999
+      },
+      "NB": {
+        "name": "New Brunswick",
+        "generalRate": 0.14,
+        "smallBusinessRate": 0.025,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.29000000000000004,
+        "combinedSmallBusiness": 0.11499999999999999
+      },
+      "NL": {
+        "name": "Newfoundland and Labrador",
+        "generalRate": 0.15,
+        "smallBusinessRate": 0.03,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.3,
+        "combinedSmallBusiness": 0.12
+      },
+      "PE": {
+        "name": "Prince Edward Island",
+        "generalRate": 0.16,
+        "smallBusinessRate": 0.01,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.31,
+        "combinedSmallBusiness": 0.09999999999999999
+      },
+      "YT": {
+        "name": "Yukon",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.09
+      },
+      "NT": {
+        "name": "Northwest Territories",
+        "generalRate": 0.115,
+        "smallBusinessRate": 0.02,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.265,
+        "combinedSmallBusiness": 0.11
+      },
+      "NU": {
+        "name": "Nunavut",
+        "generalRate": 0.12,
+        "smallBusinessRate": 0.03,
+        "smallBusinessLimit": 500000,
+        "combinedGeneral": 0.27,
+        "combinedSmallBusiness": 0.12
       }
     }
   }
